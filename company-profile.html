@@ -78,7 +78,7 @@
 						<!-- Navbar Brand -->
 						<div class="navbar-brand">
 							<img class="nav-diag hidden-xs hidden-sm hidden-md" src="index_files/nav-diag-left.jpg">
-							<a class="logo" href="https://www.convergexdm.com/za">
+							<a class="logo" href="index.html">
 								
 								<img class="default-logo" src="index_files/logo-convergexdm.png" alt="Logo">
 								<img class="shrink-logo" src="index_files/logo-convergexdm.png" alt="Logo">
@@ -100,10 +100,10 @@
 									</a>
 									<ul class="dropdown-menu pull-right">
 										<li>
-											<a href="https://www.convergexdm.com/za"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
+											<a href="index.html"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
 										</li>
 										<li>
-											<a href="http://us.convergexdm.com/"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
+											<a href="index.html"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
 										</li>
 									</ul>
 								</li>
@@ -120,22 +120,22 @@
 							<ul class="nav navbar-nav">
 
 								<!-- ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} --><li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
-									<a href="https://www.convergexdm.com/" title="Home" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'" target="_self" class="ng-binding ng-hide">Home</a>
-									<a href="https://www.convergexdm.com/za/" title="Home" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1" target="_self" class="ng-binding">Home</a>
+									<a href="index.html" title="Home" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'" target="_self" class="ng-binding ng-hide">Home</a>
+									<a href="index.html" title="Home" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1" target="_self" class="ng-binding">Home</a>
 									<a href="javascript:void(0);" title="Home" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding ng-hide" data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Home <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
 										<!-- ngRepeat: droppage in page.page -->
 									</ul>
 								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} --><li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
-									<a href="https://www.convergexdm.com/" title="Track a Package" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'" target="_self" class="ng-binding ng-hide">Track a Package</a>
+									<a href="index.html" title="Track a Package" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'" target="_self" class="ng-binding ng-hide">Track a Package</a>
 									<a href="track-a-package.html" title="Track a Package" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1" target="_self" class="ng-binding">Track a Package</a>
 									<a href="javascript:void(0);" title="Track a Package" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding ng-hide" data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Track a Package <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
 										<!-- ngRepeat: droppage in page.page -->
 									</ul>
 								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} --><li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
-									<a href="https://www.convergexdm.com/" title="Products" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'" target="_self" class="ng-binding ng-hide">Products</a>
-									<a href="https://www.convergexdm.com/" title="Products" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1" target="_self" class="ng-binding ng-hide">Products</a>
+									<a href="index.html" title="Products" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'" target="_self" class="ng-binding ng-hide">Products</a>
+									<a href="index.html" title="Products" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1" target="_self" class="ng-binding ng-hide">Products</a>
 									<a href="javascript:void(0);" title="Products" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding" data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Products <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 										<!-- ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
@@ -153,8 +153,8 @@
 										</li><!-- end ngRepeat: droppage in page.page -->
 									</ul>
 								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} --><li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
-									<a href="https://www.convergexdm.com/" title="About Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'" target="_self" class="ng-binding ng-hide">About Us</a>
-									<a href="https://www.convergexdm.com/" title="About Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1" target="_self" class="ng-binding ng-hide">About Us</a>
+									<a href="index.html" title="About Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'" target="_self" class="ng-binding ng-hide">About Us</a>
+									<a href="index.html" title="About Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1" target="_self" class="ng-binding ng-hide">About Us</a>
 									<a href="javascript:void(0);" title="About Us" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding" data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">About Us <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 										<!-- ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope active">
@@ -166,7 +166,7 @@
 										</li><!-- end ngRepeat: droppage in page.page -->
 									</ul>
 								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} --><li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
-									<a href="https://www.convergexdm.com/" title="Contact Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'" target="_self" class="ng-binding ng-hide">Contact Us</a>
+									<a href="index.html" title="Contact Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'" target="_self" class="ng-binding ng-hide">Contact Us</a>
 									<a href="contact-us.html" title="Contact Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1" target="_self" class="ng-binding">Contact Us</a>
 									<a href="javascript:void(0);" title="Contact Us" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding ng-hide" data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Contact Us <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
@@ -179,10 +179,10 @@
 									</a>
 									<ul class="dropdown-menu">
 										<li>
-											<a href="https://www.convergexdm.com/za"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
+											<a href="index.html"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
 										</li>
 										<li>
-											<a href="http://us.convergexdm.com/"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
+											<a href="index.html"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
 										</li>
 									</ul>
 								</li>
@@ -198,10 +198,10 @@
 									</a>
 									<ul class="dropdown-menu">
 										<li>
-											<a href="https://www.convergexdm.com/za"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
+											<a href="index.html"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
 										</li>
 										<li>
-											<a href="http://us.convergexdm.com/"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
+											<a href="index.html"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
 										</li>
 									</ul>
 								</li>
@@ -218,7 +218,7 @@
 		<div class="header header-dark-not header-sticky hidden-print" style="display: none;">
 			<div class="container">
 				<!-- Logo -->
-				<a class="logo" href="https://www.convergexdm.com/za">
+				<a class="logo" href="index.html">
 					<img class="visible-md visible-lg" src="index_files/logo-convergexdm.png" alt="Logo">
 					<img class="hidden-md hidden-lg" style="width : 138px; margin-left : 0px !important;" src="index_files/logo-convergexdm.png" alt="Logo">
 				</a>
@@ -249,10 +249,10 @@
 							</a>
 							<ul class="languages hoverSelectorBlock dropdown-menu pull-right">
 								<li>
-									<a href="https://www.convergexdm.com/za"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
+									<a href="index.html"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
 								</li>
 								<li>
-									<a href="http://us.convergexdm.com/"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
+									<a href="index.html"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
 								</li>
 							</ul>
 						</li>
@@ -272,7 +272,7 @@
 				<div class="container">
 					<ul class="nav navbar-nav">
 						<!-- ngRepeat: page in mainnav.page --><li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
-							<a href="https://www.convergexdm.com/za/" title="Home" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding" ng-show="page.url.length &gt; 0" target="_self">Home</a>
+							<a href="index.html" title="Home" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding" ng-show="page.url.length &gt; 0" target="_self">Home</a>
 							<a href="javascript:void(0);" title="Home" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding ng-hide" data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Home <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
 								<!-- ngRepeat: droppage in page.page -->
@@ -284,13 +284,13 @@
 								<!-- ngRepeat: droppage in page.page -->
 							</ul>
 						</li><!-- end ngRepeat: page in mainnav.page --><li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
-							<a href="https://www.convergexdm.com/" title="Products" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide" ng-show="page.url.length &gt; 0" target="_self">Products</a>
+							<a href="index.html" title="Products" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide" ng-show="page.url.length &gt; 0" target="_self">Products</a>
 							<a href="javascript:void(0);" title="Products" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding" data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Products <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 								<!-- ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a href="domestic-courier-services.html" title="Domestic Courier Services" ng-bind-html="droppage.title" target="_self" class="ng-binding">Domestic Courier Services</a></li><!-- end ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a href="international-courier-services.html" title="International Courier Services" ng-bind-html="droppage.title" target="_self" class="ng-binding">International Courier Services</a></li><!-- end ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a href="freight-solutions.html" title="Freight Solutions" ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight Solutions</a></li><!-- end ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a href="distribution-management-solutions.html" title="Distribution Management Solutions" ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Solutions</a></li><!-- end ngRepeat: droppage in page.page -->
 							</ul>
 						</li><!-- end ngRepeat: page in mainnav.page --><li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
-							<a href="https://www.convergexdm.com/" title="About Us" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide" ng-show="page.url.length &gt; 0" target="_self">About Us</a>
+							<a href="index.html" title="About Us" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide" ng-show="page.url.length &gt; 0" target="_self">About Us</a>
 							<a href="javascript:void(0);" title="About Us" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding" data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">About Us <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 								<!-- ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope active"><a href="company-profile.html" title="Company Profile" ng-bind-html="droppage.title" target="_self" class="ng-binding">Company Profile</a></li><!-- end ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a href="why-convergex.html" title="Why ConvergEX?" ng-bind-html="droppage.title" target="_self" class="ng-binding">Why ConvergEX?</a></li><!-- end ngRepeat: droppage in page.page -->
@@ -383,7 +383,7 @@ one that will meet and exceed our customers' expectations.</p>
 						<div class="col-md-4 md-margin-bottom-40">
 							<div class="headline"><h2>Main Menu</h2></div>
 							<ul class="list-unstyled link-list">
-								<!-- ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="https://www.convergexdm.com/za/" title="Home" ng-bind-html="page.title" class="ng-binding">Home</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="track-a-package.html" title="Track a Package" ng-bind-html="page.title" class="ng-binding">Track a Package</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="company-profile.html" title="Company Profile" ng-bind-html="page.title" class="ng-binding">Company Profile</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="why-convergex.html" title="Why ConvergEX?" ng-bind-html="page.title" class="ng-binding">Why ConvergEX?</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="contact-us.html" title="Contact Us" ng-bind-html="page.title" class="ng-binding">Contact Us</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page -->
+								<!-- ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="index.html" title="Home" ng-bind-html="page.title" class="ng-binding">Home</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="track-a-package.html" title="Track a Package" ng-bind-html="page.title" class="ng-binding">Track a Package</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="company-profile.html" title="Company Profile" ng-bind-html="page.title" class="ng-binding">Company Profile</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="why-convergex.html" title="Why ConvergEX?" ng-bind-html="page.title" class="ng-binding">Why ConvergEX?</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="contact-us.html" title="Contact Us" ng-bind-html="page.title" class="ng-binding">Contact Us</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page -->
 
 								<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="pop('paragraph/privacy-policy')" title="Read our Privacy Policy">Privacy Policy</a><i class="fa fa-angle-right"></i></li>
 								<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="pop('paragraph/terms-conditions/18.04.24')" title="Read our Terms &amp; Conditions">Terms &amp; Conditions</a><i class="fa fa-angle-right"></i></li>
