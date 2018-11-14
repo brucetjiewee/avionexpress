@@ -387,7 +387,7 @@ img.pg-bkg {
 }
 
 .pg-hdg {
-	background : #11428E url(../img/dark-red-bkg.jpg) right top no-repeat;
+	background : rgb(24, 81, 167) url(../img/dark-red-bkg.jpg) right top no-repeat;
 	background-size : cover;
 	color : #ffffff;
 	font-size : 3.75em !important;
