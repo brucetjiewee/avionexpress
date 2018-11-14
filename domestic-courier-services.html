@@ -11,7 +11,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="https://www.convergexdm.com/favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico">
 	<!-- Web Fonts -->
 	<link rel="stylesheet" type="text/css" href="index_files/css_002.css"> <!-- body -->
 	<link rel="stylesheet" type="text/css" href="index_files/css.css"> <!-- nav items -->
@@ -161,8 +161,8 @@
 											<a href="company-profile.html" title="Company Profile" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1" ng-bind-html="droppage.title" target="_self" class="ng-binding">Company Profile</a>
 											<a href="" title="Company Profile" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1" ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Company Profile</a>
 										</li><!-- end ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="why-convergex.html" title="Why ConvergEX?" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1" ng-bind-html="droppage.title" target="_self" class="ng-binding">Why ConvergEX?</a>
-											<a href="" title="Why ConvergEX?" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1" ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Why ConvergEX?</a>
+											<a href="why-convergex.html" title="Why Avion Express?" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1" ng-bind-html="droppage.title" target="_self" class="ng-binding">Why Avion Express?</a>
+											<a href="" title="Why Avion Express?" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1" ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Why Avion Express?</a>
 										</li><!-- end ngRepeat: droppage in page.page -->
 									</ul>
 								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} --><li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
@@ -293,7 +293,7 @@
 							<a href="index.html" title="About Us" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide" ng-show="page.url.length &gt; 0" target="_self">About Us</a>
 							<a href="javascript:void(0);" title="About Us" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding" data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">About Us <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
-								<!-- ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a href="company-profile.html" title="Company Profile" ng-bind-html="droppage.title" target="_self" class="ng-binding">Company Profile</a></li><!-- end ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a href="why-convergex.html" title="Why ConvergEX?" ng-bind-html="droppage.title" target="_self" class="ng-binding">Why ConvergEX?</a></li><!-- end ngRepeat: droppage in page.page -->
+								<!-- ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a href="company-profile.html" title="Company Profile" ng-bind-html="droppage.title" target="_self" class="ng-binding">Company Profile</a></li><!-- end ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a href="why-convergex.html" title="Why Avion Express?" ng-bind-html="droppage.title" target="_self" class="ng-binding">Why Avion Express?</a></li><!-- end ngRepeat: droppage in page.page -->
 							</ul>
 						</li><!-- end ngRepeat: page in mainnav.page --><li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
 							<a href="https://www.convergexdm.com/za/tips" title="Tips" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding" ng-show="page.url.length &gt; 0" target="_self">Tips</a>
@@ -482,7 +482,7 @@ standard, being the <a href="http://www.eia.doe.gov/pub/oil_gas/petroleum/data_p
 						<div class="col-md-4 md-margin-bottom-40">
 							<div class="headline"><h2>Main Menu</h2></div>
 							<ul class="list-unstyled link-list">
-								<!-- ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="index.html" title="Home" ng-bind-html="page.title" class="ng-binding">Home</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="track-a-package.html" title="Track a Package" ng-bind-html="page.title" class="ng-binding">Track a Package</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="company-profile.html" title="Company Profile" ng-bind-html="page.title" class="ng-binding">Company Profile</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="why-convergex.html" title="Why ConvergEX?" ng-bind-html="page.title" class="ng-binding">Why ConvergEX?</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="contact-us.html" title="Contact Us" ng-bind-html="page.title" class="ng-binding">Contact Us</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page -->
+								<!-- ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="index.html" title="Home" ng-bind-html="page.title" class="ng-binding">Home</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="track-a-package.html" title="Track a Package" ng-bind-html="page.title" class="ng-binding">Track a Package</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="company-profile.html" title="Company Profile" ng-bind-html="page.title" class="ng-binding">Company Profile</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="why-convergex.html" title="Why Avion Express?" ng-bind-html="page.title" class="ng-binding">Why Avion Express?</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="contact-us.html" title="Contact Us" ng-bind-html="page.title" class="ng-binding">Contact Us</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page -->
 
 								<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="pop('paragraph/privacy-policy')" title="Read our Privacy Policy">Privacy Policy</a><i class="fa fa-angle-right"></i></li>
 								<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="pop('paragraph/terms-conditions/18.04.24')" title="Read our Terms &amp; Conditions">Terms &amp; Conditions</a><i class="fa fa-angle-right"></i></li>
@@ -516,7 +516,7 @@ Open: 9 am – 5 pm CAT Mon – Fri*<br>
 					<div class="row hidden-xs hidden-sm">
 						<div class="col-md-9">
 							<p>
-								2018 © Ancor Distribution Management (Pty) Ltd t/a ConvergEX Distribution Management. All Rights Reserved.
+								2018 © Ancor Distribution Management (Pty) Ltd t/a Avion Express Distribution Management. All Rights Reserved.
 								
 							</p>
 						</div>
@@ -529,7 +529,7 @@ Open: 9 am – 5 pm CAT Mon – Fri*<br>
 					<div class="row visible-xs visible-sm">
 						<div class="col-xs-12 text-center">
 							<p>
-								2018 © Ancor Distribution Management (Pty) Ltd t/a ConvergEX Distribution Management. All Rights Reserved.
+								2018 © Ancor Distribution Management (Pty) Ltd t/a Avion Express Distribution Management. All Rights Reserved.
 								<br>
 								Built and Maintained by <a href="http://www.genxml.com/" class="color-cvgx-lightgrey no-underline" target="_blank">GenXml.com</a>
 							</p>
