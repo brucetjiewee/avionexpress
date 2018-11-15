@@ -11,7 +11,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="https://www.convergexdm.com/favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico">
 	<!-- Web Fonts -->
 	<link rel="stylesheet" type="text/css" href="index_files/css_002.css"> <!-- body -->
 	<link rel="stylesheet" type="text/css" href="index_files/css.css"> <!-- nav items -->
@@ -95,17 +95,10 @@
 							<ul class="nav navbar-nav hidden-xs hidden-sm">
 								<li class="dropdown">
 									
-									<a href="javascript:void(0);" title="Select Country" class="dropdown-toggle" style="padding-top: 18px;" data-toggle="dropdown" target="_self">
+									<a href="javascript:void(0);" title="Select Country" style="padding-top: 18px;" data-toggle="dropdown" target="_self">
 										<img class="" src="index_files/flag-za.png">
 									</a>
-									<ul class="dropdown-menu pull-right">
-										<li>
-											<a href="index.html"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
-										</li>
-										<li>
-											<a href="index.html"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
-										</li>
-									</ul>
+									
 								</li>
 							</ul>
 
@@ -161,8 +154,8 @@
 											<a href="company-profile.html" title="Company Profile" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1" ng-bind-html="droppage.title" target="_self" class="ng-binding">Company Profile</a>
 											<a href="" title="Company Profile" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1" ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Company Profile</a>
 										</li><!-- end ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="why-convergex.html" title="Why ConvergEX?" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1" ng-bind-html="droppage.title" target="_self" class="ng-binding">Why ConvergEX?</a>
-											<a href="" title="Why ConvergEX?" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1" ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Why ConvergEX?</a>
+											<a href="why-convergex.html" title="Why Avion Express?" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1" ng-bind-html="droppage.title" target="_self" class="ng-binding">Why Avion Express?</a>
+											<a href="" title="Why Avion Express?" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1" ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Why Avion Express?</a>
 										</li><!-- end ngRepeat: droppage in page.page -->
 									</ul>
 								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} --><li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
@@ -186,25 +179,7 @@
 										</li>
 									</ul>
 								</li>
-								<li class="">
-									<a href="https://www.convergexdm.com/za/exodus/?signin=1" target="_blank" title="Sign in to the EXodus Shipment Management System">Sign In</a>
-								</li>
-								<li class="visible-xs visible-sm" style="display: none;">
-									<a href="https://www.convergexdm.com/za/exodus/?signin=1" class="pull-right" target="_blank" title="Sign in to the EXodus Shipment Management System">
-										<img class="margin-top-10 margin-bottom-20" src="index_files/signin-exodus-logo.jpg">
-									</a>
-									<a href="javascript:void(0);" title="Select Country" class="dropdown-toggle padding-top-25" data-toggle="dropdown" target="_self">
-										<img class="" src="index_files/flag-za-circle.png"> <span ng-bind-html="downArrowIcon" class="ng-binding"><i class="fa fa-angle-down"></i></span>
-									</a>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="index.html"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
-										</li>
-										<li>
-											<a href="index.html"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
-										</li>
-									</ul>
-								</li>
+								
 
 							</ul>
 						</div>
@@ -226,35 +201,14 @@
 				<!-- Topbar -->
 				<div class="topbar">
 					<ul class="loginbar pull-right" style="padding-left : 0px;">
-						<li class="hidden-xs hidden-sm margin-right-10">
-							<a href="https://www.convergexdm.com/za/exodus/?signin=1" class="bg-color-white padding-5" target="_blank" title="Sign in to the EXodus Online Waybill">
-								<img style="height : 20px;" src="index_files/logo-exodus-32.png">
-							</a>
-						</li>
-						<li class="hoverSelector hidden-xs hidden-sm" style="display: none;">
-							<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" target="_self">SIGN IN <i class="fa fa-angle-down"></i></a>
-							<ul class="languages hoverSelectorBlock pull-right">
-								<li>
-									<a href="https://www.convergexdm.com/za/exodus/?signin=1" target="_blank" title="Sign in to the EXodus Online Waybill">
-										<img class="margin-top-10" src="index_files/logo-exodus-32.png">
-									</a>
-								</li>
-							</ul>
-						</li>
+						
 						<li class="topbar-devider hidden-xs hidden-sm" style="display: none;"></li>
 						<li class="hoverSelector">
-							<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" target="_self">
+							<a href="javascript:void(0);" class="dropdown-toggle" target="_self">
 								<img style="height : 25px; margin : -3px 0px 0px 0px;" src="index_files/bg-flag-za.jpg">
 								<i class="fa fa-angle-down" style="display: none;"></i>
 							</a>
-							<ul class="languages hoverSelectorBlock dropdown-menu pull-right">
-								<li>
-									<a href="index.html"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
-								</li>
-								<li>
-									<a href="index.html"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
-								</li>
-							</ul>
+							
 						</li>
 					</ul>
 				</div>
@@ -293,7 +247,7 @@
 							<a href="index.html" title="About Us" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide" ng-show="page.url.length &gt; 0" target="_self">About Us</a>
 							<a href="javascript:void(0);" title="About Us" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding" data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">About Us <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
-								<!-- ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope active"><a href="company-profile.html" title="Company Profile" ng-bind-html="droppage.title" target="_self" class="ng-binding">Company Profile</a></li><!-- end ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a href="why-convergex.html" title="Why ConvergEX?" ng-bind-html="droppage.title" target="_self" class="ng-binding">Why ConvergEX?</a></li><!-- end ngRepeat: droppage in page.page -->
+								<!-- ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope active"><a href="company-profile.html" title="Company Profile" ng-bind-html="droppage.title" target="_self" class="ng-binding">Company Profile</a></li><!-- end ngRepeat: droppage in page.page --><li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a href="why-convergex.html" title="Why Avion Express?" ng-bind-html="droppage.title" target="_self" class="ng-binding">Why Avion Express?</a></li><!-- end ngRepeat: droppage in page.page -->
 							</ul>
 						</li><!-- end ngRepeat: page in mainnav.page --><li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
 							<a href="https://www.convergexdm.com/za/tips" title="Tips" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding" ng-show="page.url.length &gt; 0" target="_self">Tips</a>
@@ -341,14 +295,14 @@
 <div class="hide col-sm-4 col-md-3 text-right text-xl"><em class="icon-communication-043 text-xxl">&nbsp;</em></div>
 
 <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-7 col-md-offset-0 text-md">
-<p>With <em>41 years</em> of cumulative experience in the field, the founders of <strong class="color-cvgx-red">ConvergEX</strong> identified a <em>specific requirement</em> in the market for providing a <strong>complete turnkey solution</strong> for <em>distribution management</em>, at a <strong>highly personalised</strong> and <strong>cost effective</strong>
+<p>With <em>41 years</em> of cumulative experience in the field, the founders of <strong class="color-cvgx-red">Avion Express</strong> identified a <em>specific requirement</em> in the market for providing a <strong>complete turnkey solution</strong> for <em>distribution management</em>, at a <strong>highly personalised</strong> and <strong>cost effective</strong>
  level. With the plethora of options available to all consumers, both 
 business and individual, it's become evident that these consumers 
 require a <strong>greater degree of clarity</strong> in their offering. A
  partnered approach to provide greater cost efficiency in the management
  of our customers' distribution, with the addition of the <strong>personal touch</strong> is a cornerstone of our values.</p>
 
-<p><strong class="color-cvgx-red">ConvergEX</strong> achieves this by <em>partnering </em>with <strong>best of breed carriers</strong>,
+<p><strong class="color-cvgx-red">Avion Express</strong> achieves this by <em>partnering </em>with <strong>best of breed carriers</strong>,
  and utilising proprietary systems to interface with our customers' 
 requirements. We believe that solutions exist for every distribution 
 requirement, and if we don't have one immediately, we will work to find 
@@ -383,7 +337,7 @@ one that will meet and exceed our customers' expectations.</p>
 						<div class="col-md-4 md-margin-bottom-40">
 							<div class="headline"><h2>Main Menu</h2></div>
 							<ul class="list-unstyled link-list">
-								<!-- ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="index.html" title="Home" ng-bind-html="page.title" class="ng-binding">Home</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="track-a-package.html" title="Track a Package" ng-bind-html="page.title" class="ng-binding">Track a Package</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="company-profile.html" title="Company Profile" ng-bind-html="page.title" class="ng-binding">Company Profile</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="why-convergex.html" title="Why ConvergEX?" ng-bind-html="page.title" class="ng-binding">Why ConvergEX?</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="contact-us.html" title="Contact Us" ng-bind-html="page.title" class="ng-binding">Contact Us</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page -->
+								<!-- ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="index.html" title="Home" ng-bind-html="page.title" class="ng-binding">Home</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="track-a-package.html" title="Track a Package" ng-bind-html="page.title" class="ng-binding">Track a Package</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="company-profile.html" title="Company Profile" ng-bind-html="page.title" class="ng-binding">Company Profile</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="why-convergex.html" title="Why Avion Express?" ng-bind-html="page.title" class="ng-binding">Why Avion Express?</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page --><li ng-repeat="page in footernav.page" class="ng-scope"><a href="contact-us.html" title="Contact Us" ng-bind-html="page.title" class="ng-binding">Contact Us</a><i class="fa fa-angle-right"></i></li><!-- end ngRepeat: page in footernav.page -->
 
 								<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="pop('paragraph/privacy-policy')" title="Read our Privacy Policy">Privacy Policy</a><i class="fa fa-angle-right"></i></li>
 								<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="pop('paragraph/terms-conditions/18.04.24')" title="Read our Terms &amp; Conditions">Terms &amp; Conditions</a><i class="fa fa-angle-right"></i></li>
@@ -417,22 +371,22 @@ Open: 9 am – 5 pm CAT Mon – Fri*<br>
 					<div class="row hidden-xs hidden-sm">
 						<div class="col-md-9">
 							<p>
-								2018 © Ancor Distribution Management (Pty) Ltd t/a ConvergEX Distribution Management. All Rights Reserved.
+								2018 © Ancor Distribution Management (Pty) Ltd t/a Avion Express Distribution Management. All Rights Reserved.
 								
 							</p>
 						</div>
 						<!-- Social Links -->
 						<div class="col-md-3 text-right">
-							<p>Built and Maintained by <a href="http://www.genxml.com/" class="color-cvgx-lightgrey no-underline" target="_blank">GenXml.com</a></p>
+							<p>Built and Maintained by <a href="http://www.BeauDigital.co.za/" class="color-cvgx-lightgrey no-underline" target="_blank">BeauDigital.co.za</a></p>
 						</div>
 						<!-- End Social Links -->
 					</div>
 					<div class="row visible-xs visible-sm">
 						<div class="col-xs-12 text-center">
 							<p>
-								2018 © Ancor Distribution Management (Pty) Ltd t/a ConvergEX Distribution Management. All Rights Reserved.
+								2018 © Ancor Distribution Management (Pty) Ltd t/a Avion Express Distribution Management. All Rights Reserved.
 								<br>
-								Built and Maintained by <a href="http://www.genxml.com/" class="color-cvgx-lightgrey no-underline" target="_blank">GenXml.com</a>
+								Built and Maintained by <a href="http://www.BeauDigital.co.za/" class="color-cvgx-lightgrey no-underline" target="_blank">BeauDigital.co.za</a>
 							</p>
 						</div>
 					</div>
