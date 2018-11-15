@@ -286,10 +286,10 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 				.success(
 					function (data) {
 						if (data != null) {
-							//console.log(data['convergex-track-waybill']);
-							$scope.tracking.carrier = data['convergex-track-waybill'].shipment.carrier;
+							//console.log(data['avion-express-track-waybill']);
+							$scope.tracking.carrier = data['avion-express-track-waybill'].shipment.carrier;
 							$scope.tracking.carrierLogo = '/assets/img/partner-logos/' + $scope.tracking.carrier + '_med.jpg';
-							$scope.tracking[$carrier] = data['convergex-track-waybill'];
+							$scope.tracking[$carrier] = data['avion-express-track-waybill'];
 							if ($carrier == 'exds') {
 								var $$events = $scope.tracking.exds != [] && $scope.tracking.exds.events != null ? $scope.tracking.exds.events.event : [];
 								if ($$events.length > 0) $scope.tracking.hasData = true;
