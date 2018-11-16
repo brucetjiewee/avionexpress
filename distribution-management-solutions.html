@@ -193,12 +193,12 @@
 								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope">
-									<a href="index.html" title="Track a Package" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
-									 target="_self" class="ng-binding ng-hide">Track a Package</a>
-									<a href="track-a-package.html" title="Track a Package" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1"
-									 target="_self" class="ng-binding">Track a Package</a>
-									<a href="javascript:void(0);" title="Track a Package" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding ng-hide"
-									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Track a Package <i class="fa fa-angle-down"></i></a>
+									<a href="index.html" title="Track my Parcel" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
+									 target="_self" class="ng-binding ng-hide">Track my Parcel</a>
+									<a href="track-a-package.html" title="Track my Parcel" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1"
+									 target="_self" class="ng-binding">Track my Parcel</a>
+									<a href="javascript:void(0);" title="Track my Parcel" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding ng-hide"
+									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Track my Parcel <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
 										<!-- ngRepeat: droppage in page.page -->
 									</ul>
@@ -348,10 +348,10 @@
 							</ul>
 						</li><!-- end ngRepeat: page in mainnav.page -->
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
-							<a href="track-a-package.html" title="Track a Package" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding"
-							 ng-show="page.url.length &gt; 0" target="_self">Track a Package</a>
-							<a href="javascript:void(0);" title="Track a Package" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding ng-hide"
-							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Track a Package <i class="fa fa-angle-down"></i></a>
+							<a href="track-a-package.html" title="Track my Parcel" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding"
+							 ng-show="page.url.length &gt; 0" target="_self">Track my Parcel</a>
+							<a href="javascript:void(0);" title="Track my Parcel" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding ng-hide"
+							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Track my Parcel <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
 								<!-- ngRepeat: droppage in page.page -->
 							</ul>
@@ -482,8 +482,8 @@
 								<!-- ngRepeat: page in footernav.page -->
 								<li ng-repeat="page in footernav.page" class="ng-scope"><a href="index.html" title="Home" ng-bind-html="page.title"
 									 class="ng-binding">Home</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in footernav.page -->
-								<li ng-repeat="page in footernav.page" class="ng-scope"><a href="track-a-package.html" title="Track a Package"
-									 ng-bind-html="page.title" class="ng-binding">Track a Package</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in footernav.page -->
+								<li ng-repeat="page in footernav.page" class="ng-scope"><a href="track-a-package.html" title="Track my Parcel"
+									 ng-bind-html="page.title" class="ng-binding">Track my Parcel</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in footernav.page -->
 								<li ng-repeat="page in footernav.page" class="ng-scope"><a href="company-profile.html" title="Company Profile"
 									 ng-bind-html="page.title" class="ng-binding">Company Profile</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in footernav.page -->
 								<li ng-repeat="page in footernav.page" class="ng-scope"><a href="why-avion-express.html" title="Why Avion Express?"
@@ -582,9 +582,43 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
-					<h2 id="myLargeModalLabel2" class="modal-title pop-content-title"></h2>
+					<h2 id="myLargeModalLabel2" class="modal-title pop-content-title">Privacy Policy</h2>
 				</div>
 				<div class="modal-body pop-content-body">
+					<h1>What information do we collect? </h1>
+					<p>We do not collect any of your personal information. </p>
+					<p>When contacting us on our site, as appropriate, you may be asked to enter your: name, e-mail address and phone
+						number. You may, however, visit our site anonymously. </p>
+					<h1>What do we use your information for? </h1>
+					<p>Any of the information you provide will only be used to contact you with feedback to your query. Your
+						information, whether public or private, will not be sold, exchanged, transferred, or given to any other company
+						for any reason whatsoever.</p>
+					<h1>How do we protect your information? </h1>
+					<p>We implement a variety of security measures to maintain the safety of your personal information. Our website
+						sits behind a secure HTTPS connection, with up to 256-bit encryption. While we strive to protect your personally
+						identifiable information and user privacy, we cannot guarantee the security of any information you disclose
+						online. We do not make any warranty, express, implied or otherwise, that we will be able to prevent loss, misuse,
+						unauthorized access to, or alteration of personally identifiable information you provide to us. You make any
+						disclosure of personally identifiable information to us at your own risk. We urge you to take every precaution to
+						protect your personally identifiable information when you are on the Internet, including when visiting the Site.</p>
+					<h1>Do we use cookies? </h1>
+					<p>Yes. Cookies are small files that a site or its service provider transfers to your computers hard drive through
+						your Web browser (if you allow) that enables the sites or service providers systems to recognize your browser and
+						capture and remember certain information. This is for your convenience.</p>
+					<h1>Do we disclose any information to outside parties? </h1>
+					<p>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. We
+						may also release your information when we believe release is appropriate to comply with the law, enforce our site
+						policies, or protect ours or others rights, property, or safety. </p>
+					<h1>Online Privacy Policy Only </h1>
+					<p>This online privacy policy applies only to information collected through our website and not to information
+						collected offline.</p>
+					<h1>Your Consent </h1>
+					<p>By using our site, you consent to our online privacy policy.</p>
+					<h1>Changes to our Privacy Policy </h1>
+					<p>If we decide to change our privacy policy, we will post those changes on this page. </p>
+					<h1>Contacting Us </h1>
+					<p>If there are any questions regarding this privacy policy you may contact us using the contact us link provided
+						on our site.</p>
 				</div>
 			</div>
 		</div>
