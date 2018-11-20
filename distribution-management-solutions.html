@@ -193,12 +193,24 @@
 								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope">
-									<a href="index.html" title="Track my Parcel" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
+									<a href="track-a-package.html" title="Track my Parcel" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
 									 target="_self" class="ng-binding ng-hide">Track my Parcel</a>
 									<a href="track-a-package.html" title="Track my Parcel" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1"
 									 target="_self" class="ng-binding">Track my Parcel</a>
 									<a href="javascript:void(0);" title="Track my Parcel" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding ng-hide"
 									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Track my Parcel <i class="fa fa-angle-down"></i></a>
+									<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
+										<!-- ngRepeat: droppage in page.page -->
+									</ul>
+								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
+								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
+								 class="ng-scope">
+									<a href="https://www.ewaybill.co.za/" title="EWAYBILL" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
+									 target="_self" class="ng-binding ng-hide">EWAYBILL</a>
+									<a href="https://www.ewaybill.co.za/" title="EWAYBILL" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1"
+									 target="_self" class="ng-binding">EWAYBILL</a>
+									<a href="javascript:void(0);" title="EWAYBILL" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding ng-hide"
+									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">EWAYBILL <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
 										<!-- ngRepeat: droppage in page.page -->
 									</ul>
@@ -241,9 +253,9 @@
 								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope dropdown">
-									<a href="index.html" title="About Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
+									<a href="company-profile.html" title="About Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
 									 target="_self" class="ng-binding ng-hide">About Us</a>
-									<a href="index.html" title="About Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1"
+									<a href="company-profile.html" title="About Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1"
 									 target="_self" class="ng-binding ng-hide">About Us</a>
 									<a href="javascript:void(0);" title="About Us" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding"
 									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">About Us <i class="fa fa-angle-down"></i></a>
@@ -265,7 +277,7 @@
 								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope">
-									<a href="index.html" title="Contact Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
+									<a href="contact-us.html" title="Contact Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
 									 target="_self" class="ng-binding ng-hide">Contact Us</a>
 									<a href="contact-us.html" title="Contact Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1"
 									 target="_self" class="ng-binding">Contact Us</a>
@@ -285,7 +297,7 @@
 											<a href="index.html"><img style="height : 24px;" src="index_files/flag-za.png"> South Africa</a>
 										</li>
 										<li>
-											<a href="index.html"><img style="height : 24px;" src="index_files/flag-us.png"> United States</a>
+											<a href="index.html"><img style="height : 24px;" src="index_files/flag-us.png"> Suid-Afrika</a>
 										</li>
 									</ul>
 								</li>
@@ -378,7 +390,7 @@
 							</ul>
 						</li><!-- end ngRepeat: page in mainnav.page -->
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
-							<a href="index.html" title="About Us" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide"
+							<a href="company-profile.html" title="About Us" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide"
 							 ng-show="page.url.length &gt; 0" target="_self">About Us</a>
 							<a href="javascript:void(0);" title="About Us" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding"
 							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">About Us <i class="fa fa-angle-down"></i></a>
