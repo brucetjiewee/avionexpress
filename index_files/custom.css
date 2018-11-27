@@ -14,7 +14,7 @@
 }
 
 body {
-	background : #ffffff url(../img/pg-bkg.jpg) center no-repeat;
+	/*background : #ffffff url(../img/pg-bkg.jpg) center no-repeat;*/
 	background-size : cover;
 	/*font-family: 'Open Sans', Tahoma, Arial, sans-serif !important;*/
 	font-family : 'PT Sans', 'Source Sans Pro', Calibri, 'Segoe UI', 'Trebuchet MS', Tahoma, Verdana, Arial;
@@ -75,7 +75,7 @@ body {
 }
 
 .header {
-	background : #11428E url(../img/nav-x-bg.jpg) center top no-repeat !important;
+	/*background : #11428E url(../img/nav-x-bg.jpg) center top no-repeat !important;*/
 	height : 92px;
 }
 .header > .container, .header > .container-fluid {
@@ -184,7 +184,7 @@ body {
 		display : none;
 	}
 	.header-fixed .header.header-fixed-shrink {
-		background : #11428E url(../img/nav-x-bg-shrink.jpg) center top no-repeat !important;
+		/*background : #11428E url(../img/nav-x-bg-shrink.jpg) center top no-repeat !important;/*/
 		border-bottom-width : 0px !important;
 		height : 72px !important;
 		margin-top: 0px !important;
@@ -296,7 +296,7 @@ body {
 	font-size : 0.9em !important;
 }
 .footer-v1 .footer {
-	background : #11428E url(../img/dark-red-bkg.jpg) right top no-repeat;
+	background : #11428E right top no-repeat;
 }
 .footer address {
 	font-size : 14px;

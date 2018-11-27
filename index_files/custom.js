@@ -92,7 +92,6 @@ $(document).ready(function () {
 		$setCanvasSizes();
 	})
 
-	$pgBkgImg = $('img.pg-bkg');
 
 	//$(window).scroll(function () {
 	//	if ($(window).scrollTop() > 94) {
