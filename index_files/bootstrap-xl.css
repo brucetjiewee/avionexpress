@@ -11,9 +11,7 @@
 .visible-xl-inline,
 .visible-xl-inline-block {
   display: none !important;
-}
-
-.modal-xl {
+}.modal-xl {
 width: 960px;
 }
 
