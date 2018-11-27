@@ -387,7 +387,7 @@ img.pg-bkg {
 }
 
 .pg-hdg {
-	background : rgb(24, 81, 167) url(../img/dark-red-bkg.jpg) right top no-repeat;
+	/*background : rgb(24, 81, 167) url(../img/dark-red-bkg.jpg) right top no-repeat;*/
 	background-size : cover;
 	color : #ffffff;
 	font-size : 3.75em !important;
@@ -478,7 +478,7 @@ img.pg-bkg {
 	color : #ffffff !important;
 }
 .bg-cvgx-red-img {
-	background : #0a397f url(../img/dark-red-bkg.jpg) right top no-repeat;
+	/*background : #0a397f url(../img/dark-red-bkg.jpg) right top no-repeat;*/
 	background-size : cover;
 	color : #ffffff !important;
 }
