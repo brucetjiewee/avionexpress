@@ -555,7 +555,7 @@ button.bg-color-cvgx-lightgrey:hover {
 }
 /* Revolution Slider Settings */
 
-/* GenXml Slider Settings */
+/* beaudigital Slider Settings */
 .animate.from-top {
 	position : absolute;
 	top : -100%;
@@ -564,10 +564,10 @@ button.bg-color-cvgx-lightgrey:hover {
 	position : absolute;
 	top : 200%;
 }
-.genxml-slider {
+.beaudigital-slider {
 	background-size : cover !important;
 }
-.genxml-slide {
+.beaudigital-slide {
 	/*font-family: "Open Sans", Arial, sans-serif;*/
 	/*font-family: 'Open Sans', Tahoma, HelveticaNeue, Arial, sans-serif !important;*/
 	font-family : 'PT Sans', 'Source Sans Pro', Calibri, 'Segoe UI', 'Trebuchet MS', Tahoma, Verdana, Arial;
@@ -575,31 +575,31 @@ button.bg-color-cvgx-lightgrey:hover {
 	position : absolute;
 }
 @media (min-width: 1600px) { /* xl */
-	.genxml-slider {
+	.beaudigital-slider {
 		font-size : 3em !important;
 	}
 }
 @media (min-width : 1200px) and (max-width : 1599px) { /* lg */
-	.genxml-slider {
+	.beaudigital-slider {
 		font-size : 2.5em !important;
 	}
 }
 @media (min-width : 992px) and (max-width : 1199px) { /* md */
-	.genxml-slider {
+	.beaudigital-slider {
 		font-size : 2em !important;
 	}
 }
 @media (min-width : 768px) and (max-width : 991px) { /* sm */
-	.genxml-slider {
+	.beaudigital-slider {
 		font-size : 1.75em !important;
 	}
 }
 @media (max-width : 767px) { /* xs */
-	.genxml-slider {
+	.beaudigital-slider {
 		font-size : 1.75em !important;
 	}
 }
-/* GenXml Slider Settings */
+/* beaudigital Slider Settings */
 
 .text-xxxl {
 	font-size : 4em;
