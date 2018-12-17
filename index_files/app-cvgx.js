@@ -6,48 +6,36 @@ var cmsId = '';
 var initRS = false;
 var pg = '';
 var $jsRoot = ''; // to manage JS reference from EXodus
-
 // MODULE
 var appCvgx = angular.module('ngCvgxApp', ['ui.bootstrap', 'ngSanitize']);
-
 // CONTROLLERS
 appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
-
 	$scope.pg = pg;
-
 	// RIPPLE CMS
 	$scope.friendly = cmsUrl;
 	$scope.id = cmsId;
 	//console.log($scope.friendly);
-
 	$scope.friendlys = cmsUrls.replace(/,$/, "").split(",").map(function ($friendly) {
 		return { friendly: $friendly };
 	});
 	//$scope.friendlys = JSON.stringify(cmsUrls);
 	//console.log($scope.friendlys);
-
 	$scope.header = ''; //$scope.friendly.replace(/\//g, ' <i class="fa fa-angle-right"></i>');
 	$scope.headerBkg = '';
 	$scope.downArrowIcon = '<i class="fa fa-angle-down"></i>';
-
 	$scope.currentnav = top.location.pathname;
 	$scope.currentnav = $scope.currentnav.substr(1, $scope.currentnav.length - 1);
 	//console.log($scope.currentnav);
-
 	$scope.agreeTandC = '0';
-
 	$scope.toggleAgreeTandC = function () {
 		$scope.agreeTandC = ($scope.agreeTandC == '0') ? '1' : '0';
 	}
-
 	$scope.mainnav = [];
 	$scope.productnav = [];
 	$scope.footernav = [];
-
 	$scope.content = [];
 	$scope.children = [];
 	$scope.multicontent = [];
-
 	$scope.customField = function ($title) {
 		var $customFields = $scope.content['content-item']['custom-field'];
 		var $return = '';
@@ -58,7 +46,6 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 		}
 		return $return;
 	}
-
 	$scope.pop = function ($friendly) {
 		cvgxFactory.getContent($friendly)
 			.success(
@@ -75,32 +62,25 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 				}
 			)
 	}
-
 	$scope.getSingleContent = function () {
 		cvgxFactory.getContent($scope.friendly, $scope.id)
 			.success(
 				function (data) {
-
 					$scope.content = data;
-
 					if ($scope.content.response == undefined) {
 						// content was found
-
 						$scope.header = $scope.customField('Page Title');
 						if ($scope.header.length == 0) {
 							$scope.header = $scope.content['content-item']['title'];
 						}
 						$scope.headerBkg = $scope.customField('header-image/jpg');
-
 						if (initRS) RevolutionSlider.initRShome();
-
 						var dt = new Date();
 						var intYrs = (dt.getFullYear() - 1997) + (dt.getFullYear() - 1998);
 						//console.log(intYrs.toString());
 						//console.log($scope.content['content-item']['long-desc'].indexOf('##number-of-years##'));
 						$scope.content['content-item']['short-desc'] = $scope.content['content-item']['short-desc'].replace(/##number-of-years##/g, intYrs.toString());
 						$scope.content['content-item']['long-desc'] = $scope.content['content-item']['long-desc'].replace(/##number-of-years##/g, intYrs.toString());
-
 						for (var x = 0; x < $scope.content['content-item']['custom-field'].length; x++) {
 							if ($scope.content['content-item']['custom-field'][x].title == 'jpg1/jpg') {
 								$scope.content['content-item'].imgSrc1 = $scope.content['content-item']['custom-field'][x]['#text'];
@@ -110,7 +90,6 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 								$scope.content['content-item'].author = $scope.content['content-item']['custom-field'][x]['#text'];
 							}
 						};
-
 						if ($scope.content['content-item']['child-item'] != undefined) {
 							$scope.children = $scope.content['content-item']['child-item'];
 							//console.log($scope.children);
@@ -141,9 +120,7 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 							}
 						};
 					}
-
 					$('.ng-waiting').show();
-
 				}
 			)
 			.error(
@@ -151,13 +128,10 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 				}
 			)
 	}
-
 	if ($scope.friendly.length > 0 || $scope.id.length > 0) {
 		$scope.getSingleContent();
 	}
-
 	var $data = {};
-
 	$scope.getMultiContent = function ($index) {
 		//console.log($scope.friendlys[$index]['friendly']);
 		cvgxFactory.getContent($scope.friendlys[$index]['friendly'])
@@ -170,9 +144,7 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 						var intYrs = (dt.getFullYear() - 1997) + (dt.getFullYear() - 1998);
 						data['content-item']['short-desc'] = data['content-item']['short-desc'].replace(/##number-of-years##/g, intYrs.toString());
 						data['content-item']['long-desc'] = data['content-item']['long-desc'].replace(/##number-of-years##/g, intYrs.toString());
-
 						$data[$scope.friendlys[$index]['friendly']] = data;
-
 						if ($scope.friendlys.length > $index+1) {
 							$scope.getMultiContent($index+1);
 						} else {
@@ -190,12 +162,10 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 				}
 			)
 	}
-
 	if ($scope.friendlys[0].friendly.length > 0) {
 		//console.log($scope.friendlys[0]['friendly']);
 		$scope.getMultiContent(0);
 	}
-
 	cvgxFactory.getSitemap()
 		.success(
 			function (data) {
@@ -218,13 +188,9 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 			}
 		)
 	// RIPPLE CMS END
-
-
 	// GLOBAL TRACKING
 	$scope.trackNo = '';
 	$scope.trackCarrier = 'exds';
-
-
 	$scope.tracking = [];
 	$scope.tracking.pleaseWait = false;
 	$scope.tracking.hasData = null;
@@ -233,7 +199,6 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 	$scope.tracking.exds = null;
 	$scope.tracking.dhl = null;
 	$scope.tracking.dates = [];
-
 	$scope.clearTracking = function ($clearTrackNo) {
 		$scope.tracking = [];
 		$scope.tracking.exds = null;
@@ -243,45 +208,32 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 		$scope.tracking.dates = [];
 		$scope.tracking.pleaseWait = false;
 		$scope.tracking.hasData = null;
-
 		$clearTrackNo = $clearTrackNo != null ? $clearTrackNo : false;
 		if ($clearTrackNo) $scope.trackNo = null;
 		$('#trackNo').focus();
 		//$('body').animate({ scrollTop: $('#trackNo').offset().top - 200 }, 200);
 		$('body').animate({ scrollTop: 0 }, 200);
-
 		//console.log($scope.tracking);
 		//console.log('pleaseWait:' + $scope.tracking.pleaseWait);
 		//console.log('hasData:' + $scope.tracking.hasData);
 		//console.log('trackNo:' + $scope.trackNo);
-
 		//console.log($scope.tracking.exds == null && $scope.tracking.dhl == null);
 	};
-
 	if ($scope.pg == 'track-a-package') {
 		$('.ng-waiting').show();
 		$scope.clearTracking(true);
 	};
-
 	//console.log($.isEmptyObject($scope.tracking.dhl));
-
 	$scope.getTracking = function ($carrier) {
-
 		console.log($scope.trackNo);
-
 		if ($scope.trackNo != null && $scope.trackNo != '') {
-
 			if ($carrier == null) { // set starting point
 				$carrier = 'exds';
 			};
-
 			$scope.clearTracking();
-
 			//console.log('getTracking("' + $carrier + '")');
-
 			$scope.tracking.pleaseWait = true;
 			$scope.tracking.hasData = null;
-
 			cvgxFactory.getTracking($carrier, $scope.trackNo)
 				.success(
 					function (data) {
@@ -343,11 +295,8 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 				)
 		};
 	}
-
 	//$scope.getTracking = function ($checkFormat, $clearTrackNo) {
-
 	//	$checkFormat = $checkFormat != null ? $checkFormat : true;
-
 	//	if ($checkFormat) {
 	//		if ($scope.trackNo.substr(0, 3) == 'CDM') {
 	//			//console.log('DW');
@@ -360,11 +309,8 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 	//			$scope.trackCarrier = 'dhl';
 	//		}
 	//	};
-
 	//	//console.log('Run search on ' + $scope.trackCarrier + ' for ' + $scope.trackNo);
-
 	//	$scope.clearTracking($clearTrackNo);
-
 	//	if ($scope.trackNo != null && $scope.trackNo != '') {
 	//		$scope.tracking.pleaseWait = true;
 	//		$scope.tracking.hasData = null;
@@ -440,9 +386,7 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 	//					} else {
 	//						$scope.tracking.hasData = false;
 	//					}
-
 	//					//console.log($scope.tracking.hasData);
-
 	//					$scope.tracking.pleaseWait = false;
 	//					//console.log($scope.tracking[$scope.trackCarrier]);
 	//				}
@@ -453,7 +397,6 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 	//			)
 	//	};
 	//};
-
 	//$scope.eventDates = function () {
 	//	var $eventDates = [];
 	//	if ($scope.trackCarrier == 'dhl' && $scope.tracking.dhl != null) {
@@ -472,7 +415,6 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 	//	};
 	//	return $eventDates;
 	//}
-
 	$('#trackNo').on('keydown', function (event) {
 		if ($scope.trackNo != undefined && event.which == 13) { // enter
 			$scope.getTracking();
@@ -488,12 +430,10 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 			$scope.clearTracking(true);
 		};
 	})
-
 	$('.track-carrier').on('change', function () {
 		//console.log('changed to:' + $scope.trackCarrier);
 		if ($scope.trackNo != undefined) $scope.getTracking(false);
 	});
-
 	$scope.getDay = function ($dateVal) {
 		//var $today = new Date();
 		//console.log($date + '~' + $today);
@@ -524,7 +464,6 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 		}
 		return $weekDay;
 	}
-
 	//$scope.$watch('tracking.dw', function (newVal, oldVal) {
 	//	//console.log($scope.inbound);
 	//	if ($scope.inbound.groupCode != null && newVal) {
@@ -535,12 +474,9 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 	//	}
 	//});
 	// GLOBAL TRACKING END
-
 })
-
 // FACTORIES
 appCvgx.factory('cvgxFactory', function ($http) {
-
 	// RIPPLE CMS
 	function getContent($friendly, $id) {
 		$friendly = ($friendly == undefined || $friendly == null) ? '' : $friendly;
@@ -552,7 +488,6 @@ appCvgx.factory('cvgxFactory', function ($http) {
 			cache: false
 		});
 	}
-
 	function getSitemap() {
 		//console.log($jsRoot + '/data/json-ripplecms.cshtml?type=sitemap');
 		return $http({
@@ -562,7 +497,6 @@ appCvgx.factory('cvgxFactory', function ($http) {
 		});
 	}
 	// RIPPLE CMS END
-
 	// GLOBAL TRACKING
 	function getTracking($carrier, $trackNo) {
 		console.log('/data/json-' + $carrier + '?trackNo=' + $trackNo);
@@ -573,11 +507,9 @@ appCvgx.factory('cvgxFactory', function ($http) {
 		});
 	}
 	// GLOBAL TRACKING END
-
 	return {
 		getContent: getContent,
 		getSitemap: getSitemap,
-
 		getTracking: getTracking
 	}
 });

@@ -4,13 +4,6 @@
 <!--[if !IE]><!-->
 <html style="position: relative; min-height: 100%;" lang="en">
 <!--<![endif]-->
-
-<!-- webill example number 809510 -->
-<!-- username is Avion -->
-<!-- password is #14771#  -->
-<!-- toekn is generated -->
-<!-- to test the web service, run the following command in the cmd and naviagte to this webpage -->
-<!-- chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security -->
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<style type="text/css">
@@ -27,17 +20,14 @@
 		.uib-datepicker .uib-title {
 			width: 100%;
 		}
-
 		.uib-day button,
 		.uib-month button,
 		.uib-year button {
 			min-width: 100%;
 		}
-
 		.uib-datepicker-popup.dropdown-menu {
 			display: block;
 		}
-
 		.uib-button-bar {
 			padding: 10px 9px 2px;
 		}
@@ -50,7 +40,6 @@
 	</style>
 	<style type="text/css">
 		@charset "UTF-8";
-
 		[ng\:cloak],
 		[ng-cloak],
 		[data-ng-cloak],
@@ -60,55 +49,41 @@
 		.ng-hide:not(.ng-hide-animate) {
 			display: none !important;
 		}
-
 		ng\:form {
 			display: block;
 		}
-
 		.ng-animate-shim {
 			visibility: hidden;
 		}
-
 		.ng-anchor {
 			position: absolute;
 		}
 	</style>
 	<title>Avion Express - South Africa</title>
-	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keyword" content="">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<!-- Favicon -->
 	<link rel="shortcut icon" href="favicon.ico">
-	<!-- Web Fonts -->
-	<link rel="stylesheet" type="text/css" href="index_files/css_002.css"> <!-- body -->
-	<link rel="stylesheet" type="text/css" href="index_files/css.css"> <!-- nav items -->
-	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet" type="text/css" href="index_files/css_002.css"> 
+	<link rel="stylesheet" type="text/css" href="index_files/css.css"> 
 	<link rel="stylesheet" href="index_files/bootstrap.css">
 	<link rel="stylesheet" href="index_files/style.min.css">
-	<!-- CSS Header and Footer -->
 	<link rel="stylesheet" href="index_files/header-v6.min.css">
-
 	<link rel="stylesheet" href="index_files/footer-v1.css">
-
-	<!-- CSS Implementing Plugins -->
 	<link rel="stylesheet" href="index_files/animate.min.css">
 	<link rel="stylesheet" href="index_files/styles.min.css">
 	<link rel="stylesheet" href="index_files/line-icons.min.css">
 	<link rel="stylesheet" href="index_files/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
-
 	<link rel="stylesheet" href="index_files/sky-forms.min.css">
 	<link rel="stylesheet" href="index_files/custom-sky-forms.min.css">
 	<!--[if lt IE 9]><link rel="stylesheet" href="~/assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
 	<link rel="stylesheet" href="index_files/shortcode_timeline2.min.css">
-	<!-- CSS Theme -->
 	<link rel="stylesheet" href="index_files/light.min.css" id="style_color">
 	<link rel="stylesheet" href="index_files/dark.min.css">
-	<!-- CSS Customization -->
 	<link rel="stylesheet" href="index_files/bootstrap-xl.min.css">
 	<link rel="stylesheet" href="index_files/beaudigital-spacing.css">
 	<link rel="stylesheet" href="index_files/custom.min.css">
@@ -118,7 +93,6 @@
 <body class="header-fixed header-fixed-space ng-scope" ng-app="ngCvgxApp" ng-controller="cvgxController" style="margin-bottom: 140px;">
 	<div class="wrapper">
 		<!--=== Header ===-->
-		<!-- For Printing -->
 		<div class="container visible-print">
 			<div class="row">
 				<div class="col-xs-4">
@@ -131,28 +105,22 @@
 		</div>
 		<!--=== Header v6 ===-->
 		<div class="header-v6 header-classic-dark header-sticky hidden-print">
-			<!-- Navbar -->
 			<div class="navbar mega-menu" role="navigation">
 				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="menu-container">
 						<button type="button" class="navbar-toggle margin-top-25 margin-bottom-10" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 							<span class="sr-only">Toggle navigation</span>
 							<i class="fa fa-3x fa-bars color-white text-tight"></i>
 						</button>
-						<!-- Navbar Brand -->
 						<div class="navbar-brand">
 							<img class="nav-diag hidden-xs hidden-sm hidden-md" src="index_files/nav-diag-left.jpg">
 							<a class="logo" href="index.html">
-
 								<img class="default-logo" src="index_files/logo-avion-express.png" alt="Logo">
 								<img class="shrink-logo" src="index_files/logo-avion-express.png" alt="Logo">
 							</a>
 							<img class="nav-diag hidden-xs hidden-sm hidden-md" src="index_files/nav-diag-right.jpg">
 						</div>
-						<!-- ENd Navbar Brand -->
 					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
 						<div class="menu-container">
 							<ul class="nav navbar-nav hidden-xs hidden-sm">
@@ -168,7 +136,6 @@
 								<img class="nav-diag hidden-md" src="index_files/nav-diag-left.jpg">
 							</div>
 							<ul class="nav navbar-nav">
-								<!-- ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope">
 									<a href="index.html" title="Home" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
@@ -178,9 +145,8 @@
 									<a href="javascript:void(0);" title="Home" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding ng-hide"
 									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Home <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
-										<!-- ngRepeat: droppage in page.page -->
 									</ul>
-								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
+								</li>
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope">
 									<a href="track-a-package.html" title="Track my Parcel" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
@@ -190,9 +156,8 @@
 									<a href="javascript:void(0);" title="Track my Parcel" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding ng-hide"
 									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Track my Parcel <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
-										<!-- ngRepeat: droppage in page.page -->
 									</ul>
-								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
+								</li>
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope">
 									<a href="https://www.ewaybill.co.za/" title="EWAYBILL" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
@@ -202,9 +167,8 @@
 									<a href="javascript:void(0);" title="EWAYBILL" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding ng-hide"
 									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">EWAYBILL <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
-										<!-- ngRepeat: droppage in page.page -->
 									</ul>
-								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
+								</li>
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope dropdown">
 									<a href="index.html" title="Products" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
@@ -214,33 +178,32 @@
 									<a href="javascript:void(0);" title="Products" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding"
 									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Products <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
-										<!-- ngRepeat: droppage in page.page -->
 										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
 											<a href="domestic-courier-services.html" title="Domestic Courier Services" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Domestic Courier Services</a>
 											<a href="" title="Domestic Courier Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Domestic Courier Services</a>
-										</li><!-- end ngRepeat: droppage in page.page -->
+										</li>
 										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
 											<a href="international-courier-services.html" title="International Courier Services" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding">International Courier Services</a>
 											<a href="" title="International Courier Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">International Courier Services</a>
-										</li><!-- end ngRepeat: droppage in page.page -->
+										</li>
 										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
 											<a href="freight-solutions.html" title="Freight Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight Solutions</a>
 											<a href="" title="Freight Solutions" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Freight Solutions</a>
-										</li><!-- end ngRepeat: droppage in page.page -->
+										</li>
 										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
 											<a href="distribution-management-solutions.html" title="Distribution Management Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Solutions</a>
 											<a href="" title="Distribution Management Solutions" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Distribution Management Solutions</a>
-										</li><!-- end ngRepeat: droppage in page.page -->
+										</li>
 									</ul>
-								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
+								</li>
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope dropdown">
 									<a href="company-profile.html" title="About Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
@@ -250,21 +213,20 @@
 									<a href="javascript:void(0);" title="About Us" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding"
 									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">About Us <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
-										<!-- ngRepeat: droppage in page.page -->
 										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
 											<a href="company-profile.html" title="Company Profile" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Company Profile</a>
 											<a href="" title="Company Profile" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Company Profile</a>
-										</li><!-- end ngRepeat: droppage in page.page -->
+										</li>
 										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
 											<a href="why-avion-express.html" title="Why Avion Express?" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Why Avion Express?</a>
 											<a href="" title="Why Avion Express?" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Why Avion Express?</a>
-										</li><!-- end ngRepeat: droppage in page.page -->
+										</li>
 									</ul>
-								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
+								</li>
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope">
 									<a href="contact-us.html" title="Contact Us" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
@@ -274,9 +236,8 @@
 									<a href="javascript:void(0);" title="Contact Us" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding ng-hide"
 									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Contact Us <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
-										<!-- ngRepeat: droppage in page.page -->
 									</ul>
-								</li><!-- end ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
+								</li>
 								<li class="dropdown" style="display: none;">
 									<a href="javascript:void(0);" title="South Africa" class="dropdown-toggle padding-top-15 padding-bottom-25"
 									 data-toggle="dropdown" target="_self">
@@ -297,119 +258,101 @@
 					<!--/navbar-collapse-->
 				</div>
 			</div>
-			<!-- End Navbar -->
 		</div>
 		<!--=== End Header v6 ===-->
-		<!-- For Screen -->
 		<div class="header header-dark-not header-sticky hidden-print" style="display: none;">
 			<div class="container">
-				<!-- Logo -->
 				<a class="logo" href="index.html">
 					<img class="visible-md visible-lg" src="index_files/logo-avion-express.png" alt="Logo">
 					<img class="hidden-md hidden-lg" style="width : 138px; margin-left : 0px !important;" src="index_files/logo-avion-express.png"
 					 alt="Logo">
 				</a>
-				<!-- End Logo -->
-				<!-- Topbar -->
 				<div class="topbar">
 					<ul class="loginbar pull-right" style="padding-left : 0px;">
-
 						<li class="topbar-devider hidden-xs hidden-sm" style="display: none;"></li>
 						<li class="hoverSelector">
 							<a href="javascript:void(0);" class="dropdown-toggle" target="_self">
 								<img style="height : 25px; margin : -3px 0px 0px 0px;" src="index_files/bg-flag-za.jpg">
 								<i class="fa fa-angle-down" style="display: none;"></i>
 							</a>
-
 						</li>
 					</ul>
 				</div>
-				<!-- End Topbar -->
-				<!-- Toggle get grouped for better mobile display -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="fa fa-bars"></span>
 				</button>
-				<!-- End Toggle -->
 			</div>
 			<!--/end container-->
-			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
 				<div class="container">
 					<ul class="nav navbar-nav">
-						<!-- ngRepeat: page in mainnav.page -->
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
 							<a href="index.html" title="Home" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding" ng-show="page.url.length &gt; 0"
 							 target="_self">Home</a>
 							<a href="javascript:void(0);" title="Home" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding ng-hide"
 							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Home <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
-								<!-- ngRepeat: droppage in page.page -->
 							</ul>
-						</li><!-- end ngRepeat: page in mainnav.page -->
+						</li>
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
 							<a href="track-a-package.html" title="Track my Parcel" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding"
 							 ng-show="page.url.length &gt; 0" target="_self">Track my Parcel</a>
 							<a href="javascript:void(0);" title="Track my Parcel" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding ng-hide"
 							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Track my Parcel <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
-								<!-- ngRepeat: droppage in page.page -->
 							</ul>
-						</li><!-- end ngRepeat: page in mainnav.page -->
+						</li>
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
 							<a href="index.html" title="Products" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide"
 							 ng-show="page.url.length &gt; 0" target="_self">Products</a>
 							<a href="javascript:void(0);" title="Products" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding"
 							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Products <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
-								<!-- ngRepeat: droppage in page.page -->
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
 									 href="domestic-courier-services.html" title="Domestic Courier Services" ng-bind-html="droppage.title" target="_self"
-									 class="ng-binding">Domestic Courier Services</a></li><!-- end ngRepeat: droppage in page.page -->
+									 class="ng-binding">Domestic Courier Services</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
 									 href="international-courier-services.html" title="International Courier Services" ng-bind-html="droppage.title"
-									 target="_self" class="ng-binding">International Courier Services</a></li><!-- end ngRepeat: droppage in page.page -->
+									 target="_self" class="ng-binding">International Courier Services</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
 									 href="freight-solutions.html" title="Freight Solutions" ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight
-										Solutions</a></li><!-- end ngRepeat: droppage in page.page -->
+										Solutions</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
 									 href="distribution-management-solutions.html" title="Distribution Management Solutions" ng-bind-html="droppage.title"
-									 target="_self" class="ng-binding">Distribution Management Solutions</a></li><!-- end ngRepeat: droppage in page.page -->
+									 target="_self" class="ng-binding">Distribution Management Solutions</a></li>
 							</ul>
-						</li><!-- end ngRepeat: page in mainnav.page -->
+						</li>
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
 							<a href="company-profile.html" title="About Us" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide"
 							 ng-show="page.url.length &gt; 0" target="_self">About Us</a>
 							<a href="javascript:void(0);" title="About Us" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding"
 							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">About Us <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
-								<!-- ngRepeat: droppage in page.page -->
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
 									 href="company-profile.html" title="Company Profile" ng-bind-html="droppage.title" target="_self" class="ng-binding">Company
-										Profile</a></li><!-- end ngRepeat: droppage in page.page -->
+										Profile</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
 									 href="why-avion-express.html" title="Why Avion Express?" ng-bind-html="droppage.title" target="_self" class="ng-binding">Why
-										Avion Express?</a></li><!-- end ngRepeat: droppage in page.page -->
+										Avion Express?</a></li>
 							</ul>
-						</li><!-- end ngRepeat: page in mainnav.page -->
+						</li>
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
 							<a href="https://www.avion-express.co.za/tips" title="Tips" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding"
 							 ng-show="page.url.length &gt; 0" target="_self">Tips</a>
 							<a href="javascript:void(0);" title="Tips" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding ng-hide"
 							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Tips <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
-								<!-- ngRepeat: droppage in page.page -->
 							</ul>
-						</li><!-- end ngRepeat: page in mainnav.page -->
+						</li>
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope">
 							<a href="contact-us.html" title="Contact Us" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding"
 							 ng-show="page.url.length &gt; 0" target="_self">Contact Us</a>
 							<a href="javascript:void(0);" title="Contact Us" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding ng-hide"
 							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Contact Us <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu ng-hide" ng-show="page.page.length &gt; 0">
-								<!-- ngRepeat: droppage in page.page -->
 							</ul>
-						</li><!-- end ngRepeat: page in mainnav.page -->
+						</li>
 					</ul>
 				</div>
 				<!--/end container-->
@@ -424,10 +367,8 @@
 			<div class="col-md-3">
 				<form class="sky-form contact-style ng-pristine ng-invalid ng-invalid-required">
 					<fieldset class="no-padding" style="background: none !important;">
-
 						<div class="row">
 							<div class="col-xs-12">
-								<!-- TRACK NO INPUT FIELD -->
 								<section>
 									<label class="input" style="background-color: none !important;">
 										<i class="icon-prepend fa fa-tag"></i>
@@ -442,7 +383,6 @@
 							<div class="col-xs-12">To track your Avion Express package, enter the waybill number in the field provided and
 								press ENTER, or click the search icon.</div>
 						</div>
-
 						<div class="ng-waiting row padding-top-20 ng-hide" style="border-top: 0px solid rgb(153, 153, 153);" ng-show="tracking.pleaseWait == true">
 							<div class="col-xs-12 text-center">
 								<i class="fa fa-3x fa-spin fa-circle-o-notch"></i><br>
@@ -496,7 +436,6 @@
 								</section>
 							</div>
 						</div>
-
 						<div class="ng-waiting row margin-top-10 padding-bottom-20 ng-hide" style="border-top: 0px solid rgb(153, 153, 153);"
 						 ng-hide="tracking.hasData == false || tracking.hasData == null">
 							<div class="col-xs-12">
@@ -513,7 +452,6 @@
 					</div>
 				</div>
 				<ul class="ng-waiting timeline-v2 ng-hide" ng-hide="tracking.hasData == false || tracking.hasData == null" style="">
-					<!-- ngRepeat: date in tracking.dates -->
 				</ul>
 			</div>
 		</div>
@@ -532,18 +470,16 @@
 								<h2>Main Menu</h2>
 							</div>
 							<ul class="list-unstyled link-list">
-								<!-- ngRepeat: page in footernav.page -->
 								<li ng-repeat="page in footernav.page" class="ng-scope"><a href="index.html" title="Home" ng-bind-html="page.title"
-									 class="ng-binding">Home</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in footernav.page -->
+									 class="ng-binding">Home</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in footernav.page" class="ng-scope"><a href="track-a-package.html" title="Track my Parcel"
-									 ng-bind-html="page.title" class="ng-binding">Track my Parcel</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in footernav.page -->
+									 ng-bind-html="page.title" class="ng-binding">Track my Parcel</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in footernav.page" class="ng-scope"><a href="company-profile.html" title="Company Profile"
-									 ng-bind-html="page.title" class="ng-binding">Company Profile</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in footernav.page -->
+									 ng-bind-html="page.title" class="ng-binding">Company Profile</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in footernav.page" class="ng-scope"><a href="why-avion-express.html" title="Why Avion Express?"
-									 ng-bind-html="page.title" class="ng-binding">Why Avion Express?</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in footernav.page -->
+									 ng-bind-html="page.title" class="ng-binding">Why Avion Express?</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in footernav.page" class="ng-scope"><a href="contact-us.html" title="Contact Us"
-									 ng-bind-html="page.title" class="ng-binding">Contact Us</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in footernav.page -->
-
+									 ng-bind-html="page.title" class="ng-binding">Contact Us</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="pop('paragraph/privacy-policy')"
 									 title="Read our Privacy Policy">Privacy Policy</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="pop('paragraph/terms-conditions/18.04.24')"
@@ -555,15 +491,14 @@
 								<h2>Our Products</h2>
 							</div>
 							<ul class="list-unstyled link-list">
-								<!-- ngRepeat: page in productnav.page -->
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="domestic-courier-services.html" title="Domestic Courier Services"
-									 ng-bind-html="page.title" class="ng-binding">Domestic Courier Services</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in productnav.page -->
+									 ng-bind-html="page.title" class="ng-binding">Domestic Courier Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="international-courier-services.html" title="International Courier Services"
-									 ng-bind-html="page.title" class="ng-binding">International Courier Services</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in productnav.page -->
+									 ng-bind-html="page.title" class="ng-binding">International Courier Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="freight-solutions.html" title="Freight Solutions"
-									 ng-bind-html="page.title" class="ng-binding">Freight Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in productnav.page -->
+									 ng-bind-html="page.title" class="ng-binding">Freight Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-solutions.html" title="Distribution Management Solutions"
-									 ng-bind-html="page.title" class="ng-binding">Distribution Management Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li><!-- end ngRepeat: page in productnav.page -->
+									 ng-bind-html="page.title" class="ng-binding">Distribution Management Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 							</ul>
 						</div>
 						<div class="col-md-4 map-img md-margin-bottom-40">
@@ -593,15 +528,12 @@
 						<div class="col-md-9">
 							<p>
 								2018 © Avion Express. All Rights Reserved.
-
 							</p>
 						</div>
-						<!-- Social Links -->
 						<div class="col-md-3 text-right">
 							<p>Built and Maintained by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
 								 target="_blank">beaudigital.co.za</a></p>
 						</div>
-						<!-- End Social Links -->
 					</div>
 					<div class="row visible-xs visible-sm">
 						<div class="col-xs-12 text-center">
@@ -620,14 +552,10 @@
 		<!--=== End Footer Version 1 ===-->
 	</div>
 	<!--/wrapper-->
-	<!-- SPINNING WAITER OVERLAY -->
 	<div class="waiter" style="display: none;">
 		<i class="fa fa-3x fa-spin fa-circle-o-notch"></i><br>
 		<h3>Please wait...</h3>
 	</div>
-	<!-- /SPINNING WAITER OVERLAY -->
-
-	<!-- Large modal -->
 	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
 	 aria-hidden="true">
 		<div class="modal-dialog modal-lg">
@@ -675,24 +603,14 @@
 			</div>
 		</div>
 	</div>
-	<!-- Large modal -->
-	<!-- JS Global Compulsory -->
-	<!-- <script type="text/javascript" src="index_files/jquery_003.js"></script> -->
-	<!-- <script type="text/javascript" src="index_files/jquery-migrate.js"></script> -->
 	<script src="node_modules\jquery\dist\jquery.min.js"></script>
 	<script type="text/javascript" src="index_files/bootstrap.js"></script>
-
-	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="index_files/back-to-top.min.js"></script>
 	<script type="text/javascript" src="index_files/smoothScroll.min.js"></script>
 	<script type="text/javascript" src="index_files/wow.js"></script>
-
-	<!-- JS Page Level -->
 	<script type="text/javascript" src="index_files/app.min.js"></script>
 	<script type="text/javascript" src="js/all.min.js"></script>
 	<script type="text/javascript" src="js/fontawesome.min.js"></script>
-
-	<!-- JS Customization -->
 	<script type="text/javascript" src="index_files/custom.js"></script>
 	<div class="container">
 		<div class="bs-size visible-xs" id="bs-size-xs"></div>
@@ -707,7 +625,6 @@
 	<!--[if lt IE 10]>
 		<script src="~/assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
 		<![endif]-->
-	<!-- ANGULARJS -->
 	<script type="text/javascript">
 		$(document).ready(function () {
 			App.init();
@@ -745,7 +662,6 @@
 		});
 		return token;
 	}
-
 	function GetTrackingXML(token){
 		var token = getToken();
 		var trackNo = $('#trackNo').val();
@@ -777,7 +693,6 @@
 			error: processError,
 		});
 	}
-
 	function processError(data, status, req) {
 		console.log(req.responseText);
 		console.log(data.responseText);
@@ -788,7 +703,6 @@
 	<script src="~/assets/plugins/html5shiv.js"></script>
 	<script src="~/assets/plugins/placeholder-IE-fixes.js"></script>
 	<![endif]-->
-
 	<div id="topcontrol" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;" title="Scroll Back to Top"></div>
 </body>
 </html>
