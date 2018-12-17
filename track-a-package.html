@@ -66,8 +66,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="index_files/css_002.css"> 
-	<link rel="stylesheet" type="text/css" href="index_files/css.css"> 
+	<link rel="stylesheet" type="text/css" href="index_files/css_002.css">
+	<link rel="stylesheet" type="text/css" href="index_files/css.css">
 	<link rel="stylesheet" href="index_files/bootstrap.css">
 	<link rel="stylesheet" href="index_files/style.min.css">
 	<link rel="stylesheet" href="index_files/header-v6.min.css">
@@ -88,7 +88,9 @@
 	<link rel="stylesheet" href="index_files/beaudigital-spacing.css">
 	<link rel="stylesheet" href="index_files/custom.min.css">
 	<link rel="stylesheet" href="css/site.css">
-	<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script> <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script>
+	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
 </head>
 <body class="header-fixed header-fixed-space ng-scope" ng-app="ngCvgxApp" ng-controller="cvgxController" style="margin-bottom: 140px;">
 	<div class="wrapper">
@@ -187,18 +189,6 @@
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Services</a>
 											<a href="" title="Distribution Management Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Distribution Management Services</a>
-										</li>
-										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="freight-solutions.html" title="Freight Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight Solutions</a>
-											<a href="" title="Freight Solutions" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Freight Solutions</a>
-										</li>
-										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="distribution-management-solutions.html" title="Distribution Management Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Solutions</a>
-											<a href="" title="Distribution Management Solutions" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Distribution Management Solutions</a>
 										</li>
 									</ul>
 								</li>
@@ -305,17 +295,11 @@
 							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Services <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="courier-and-freight-services.html" title="Courier and Freight Services" ng-bind-html="droppage.title" target="_self"
-									 class="ng-binding">Courier and Freight Services</a></li>
+									 href="courier-and-freight-services.html" title="Courier and Freight Services" ng-bind-html="droppage.title"
+									 target="_self" class="ng-binding">Courier and Freight Services</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
 									 href="distribution-management-services.html" title="Distribution Management Services" ng-bind-html="droppage.title"
 									 target="_self" class="ng-binding">Distribution Management Services</a></li>
-								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="freight-solutions.html" title="Freight Solutions" ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight
-										Solutions</a></li>
-								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="distribution-management-solutions.html" title="Distribution Management Solutions" ng-bind-html="droppage.title"
-									 target="_self" class="ng-binding">Distribution Management Solutions</a></li>
 							</ul>
 						</li>
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
@@ -487,10 +471,6 @@
 									 ng-bind-html="page.title" class="ng-binding">Courier and Freight Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-services.html" title="Distribution Management Services"
 									 ng-bind-html="page.title" class="ng-binding">Distribution Management Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="freight-solutions.html" title="Freight Solutions"
-									 ng-bind-html="page.title" class="ng-binding">Freight Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-solutions.html" title="Distribution Management Solutions"
-									 ng-bind-html="page.title" class="ng-binding">Distribution Management Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 							</ul>
 						</div>
 						<div class="col-md-4 map-img md-margin-bottom-40">
@@ -522,8 +502,7 @@
 							</p>
 						</div>
 						<div class="col-md-3 text-right">
-							<p>managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
-								 target="_blank">beaudigital.co.za</a></p>
+							<p>managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline" target="_blank">beaudigital.co.za</a></p>
 						</div>
 					</div>
 					<div class="row visible-xs visible-sm">
@@ -531,8 +510,7 @@
 							<p>
 								2018 © Avion Express. All Rights Reserved.
 								<br>
-								managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
-								 target="_blank">beaudigital.co.za</a>
+								managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline" target="_blank">beaudigital.co.za</a>
 							</p>
 						</div>
 					</div>
@@ -617,10 +595,10 @@
 		pg = 'track-a-package';
 	</script>
 	<script>
-	function getToken(){
-		var token;
-		var soapRequest =
-			'<?xml version="1.0" encoding="utf-8"?>\
+		function getToken() {
+			var token;
+			var soapRequest =
+				'<?xml version="1.0" encoding="utf-8"?>\
 			<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">\
 			<soap12:Body>\
 				<Login xmlns="http://citjnb.co.za/citwebservices/">\
@@ -629,59 +607,60 @@
 				</Login>\
 			</soap12:Body>\
 			</soap12:Envelope>';
-		var url = "http://www.citwebservices.co.za/citwebservices.asmx?WSDL/Login";
-		$.ajax({
-			type: "POST",
-			url: url ,
-			data: soapRequest,
-			async: false,
-			dataType: "xml",
-			contentType: "text/xml; charset=\"utf-8\"",
-			success: function(data){
-				token = $(data).find("LoginResult").text();
-			},
-			error: processError,
-		});
-		return token;
-	}
-	function GetTrackingXML(token){
-		var token = getToken();
-		var trackNo = $('#trackNo').val();
-		console.log("your token is: " + token);
-		console.log("your entered tracking number is: "+trackNo);
-		var soapRequest =
-			'<?xml version="1.0" encoding="utf-8"?>\
+			var url = "http://www.citwebservices.co.za/citwebservices.asmx?WSDL/Login";
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: soapRequest,
+				async: false,
+				dataType: "xml",
+				contentType: "text/xml; charset=\"utf-8\"",
+				success: function (data) {
+					token = $(data).find("LoginResult").text();
+				},
+				error: processError,
+			});
+			return token;
+		}
+		function GetTrackingXML(token) {
+			var token = getToken();
+			var trackNo = $('#trackNo').val();
+			console.log("your token is: " + token);
+			console.log("your entered tracking number is: " + trackNo);
+			var soapRequest =
+				'<?xml version="1.0" encoding="utf-8"?>\
 			<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">\
 			<soap12:Body>\
 				<GetTrackingDataset xmlns="http://citjnb.co.za/citwebservices/">\
 				<strUsername>Avion</strUsername>\
-				<strToken>'+token+'</strToken>\
+				<strToken>' +
+				token + '</strToken>\
 				<strAccountNo>14771</strAccountNo>\
-				<strWaybillNo>'+trackNo+'</strWaybillNo>\
+				<strWaybillNo>' + trackNo +
+				'</strWaybillNo>\
 				</GetTrackingDataset>\
 			</soap12:Body>\
 			</soap12:Envelope>';
-		var url = "http://www.citwebservices.co.za/citwebservices.asmx?WSDL/GetTrackingDataset";
-		$.ajax({
-			type: "POST",
-			url: url ,
-			data: soapRequest,
-			dataType: "xml",
-			contentType: "text/xml; charset=\"utf-8\"",
-			success: function(data,status,req){
-				console.log("your tracking is:");
-				var obj = $(data).find("GetTrackingDatasetResult");
-				$('#results').html("").append(obj[0]);
-
-				console.log(obj[0]);
-			},
-			error: processError,
-		});
-	}
-	function processError(data, status, req) {
-		console.log(req.responseText);
-		console.log(data.responseText);
-	}
+			var url = "http://www.citwebservices.co.za/citwebservices.asmx?WSDL/GetTrackingDataset";
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: soapRequest,
+				dataType: "xml",
+				contentType: "text/xml; charset=\"utf-8\"",
+				success: function (data, status, req) {
+					console.log("your tracking is:");
+					var obj = $(data).find("GetTrackingDatasetResult");
+					$('#results').html("").append(obj[0]);
+					console.log(obj[0]);
+				},
+				error: processError,
+			});
+		}
+		function processError(data, status, req) {
+			console.log(req.responseText);
+			console.log(data.responseText);
+		}
 	</script>
 	<!--[if lt IE 9]>
 	<script src="~/assets/plugins/respond.js"></script>
