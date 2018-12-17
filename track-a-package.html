@@ -569,7 +569,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="node_modules\jquery\dist\jquery.min.js"></script>
+	<script type="text/javascript" src="index_files/jquery.min.js"></script>
 	<script type="text/javascript" src="index_files/bootstrap.js"></script>
 	<script type="text/javascript" src="index_files/back-to-top.min.js"></script>
 	<script type="text/javascript" src="index_files/smoothScroll.min.js"></script>
@@ -633,11 +633,9 @@
 			<soap12:Body>\
 				<GetTrackingDataset xmlns="http://citjnb.co.za/citwebservices/">\
 				<strUsername>Avion</strUsername>\
-				<strToken>' +
-				token + '</strToken>\
+				<strToken>' + token + '</strToken>\
 				<strAccountNo>14771</strAccountNo>\
-				<strWaybillNo>' + trackNo +
-				'</strWaybillNo>\
+				<strWaybillNo>' + trackNo + '</strWaybillNo>\
 				</GetTrackingDataset>\
 			</soap12:Body>\
 			</soap12:Envelope>';
