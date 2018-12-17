@@ -626,12 +626,6 @@
 		<script src="~/assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
 		<![endif]-->
 	<script type="text/javascript">
-		$(document).ready(function () {
-			App.init();
-			new WOW().init();
-		});
-	</script>
-	<script type="text/javascript">
 		pg = 'track-a-package';
 	</script>
 	<script>
@@ -688,7 +682,7 @@
 			contentType: "text/xml; charset=\"utf-8\"",
 			success: function(data,status,req){
 				console.log("your tracking is:");
-				console.log($(data).find("GetTrackingXMLResult").text);
+				console.log($.parseXML($(data).find("GetTrackingXMLResult")));
 			},
 			error: processError,
 		});
