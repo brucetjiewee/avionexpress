@@ -66,8 +66,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="index_files/css_002.css"> 
-	<link rel="stylesheet" type="text/css" href="index_files/css.css"> 
+	<link rel="stylesheet" type="text/css" href="index_files/css_002.css">
+	<link rel="stylesheet" type="text/css" href="index_files/css.css">
 	<link rel="stylesheet" href="index_files/bootstrap.css">
 	<link rel="stylesheet" href="index_files/style.min.css">
 	<link rel="stylesheet" href="index_files/header-v6.min.css">
@@ -87,7 +87,9 @@
 	<link rel="stylesheet" href="index_files/beaudigital-spacing.css">
 	<link rel="stylesheet" href="index_files/custom.min.css">
 	<link rel="stylesheet" href="css/site.css">
-	<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script> <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script>
+	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
 </head>
 <body class="header-fixed header-fixed-space ng-scope" ng-app="ngCvgxApp" ng-controller="cvgxController" style="margin-bottom: 140px;">
 	<div class="wrapper">
@@ -186,18 +188,6 @@
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Services</a>
 											<a href="" title="Distribution Management Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Distribution Management Services</a>
-										</li>
-										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="freight-solutions.html" title="Freight Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight Solutions</a>
-											<a href="" title="Freight Solutions" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Freight Solutions</a>
-										</li>
-										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="distribution-management-solutions.html" title="Distribution Management Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Solutions</a>
-											<a href="" title="Distribution Management Solutions" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Distribution Management Solutions</a>
 										</li>
 									</ul>
 								</li>
@@ -304,17 +294,11 @@
 							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Services <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="courier-and-freight-services.html" title="Courier and Freight Services" ng-bind-html="droppage.title" target="_self"
-									 class="ng-binding">Courier and Freight Services</a></li>
+									 href="courier-and-freight-services.html" title="Courier and Freight Services" ng-bind-html="droppage.title"
+									 target="_self" class="ng-binding">Courier and Freight Services</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
 									 href="distribution-management-services.html" title="Distribution Management Services" ng-bind-html="droppage.title"
 									 target="_self" class="ng-binding">Distribution Management Services</a></li>
-								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="freight-solutions.html" title="Freight Solutions" ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight
-										Solutions</a></li>
-								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="distribution-management-solutions.html" title="Distribution Management Solutions" ng-bind-html="droppage.title"
-									 target="_self" class="ng-binding">Distribution Management Solutions</a></li>
 							</ul>
 						</li>
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
@@ -395,7 +379,7 @@
 									<label class="label">Phone</label>
 									<label class="input">
 										<i class="icon-append fa fa-phone"></i>
-										<input type="text" name="tel" >
+										<input type="text" name="tel">
 									</label>
 								</section>
 								<section class="col-sm-7 col-lg-9">
@@ -486,10 +470,6 @@
 									 ng-bind-html="page.title" class="ng-binding">Courier and Freight Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-services.html" title="Distribution Management Services"
 									 ng-bind-html="page.title" class="ng-binding">Distribution Management Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="freight-solutions.html" title="Freight Solutions"
-									 ng-bind-html="page.title" class="ng-binding">Freight Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-solutions.html" title="Distribution Management Solutions"
-									 ng-bind-html="page.title" class="ng-binding">Distribution Management Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 							</ul>
 						</div>
 						<div class="col-md-4 map-img md-margin-bottom-40">
@@ -521,8 +501,7 @@
 							</p>
 						</div>
 						<div class="col-md-3 text-right">
-							<p>managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
-								 target="_blank">beaudigital.co.za</a></p>
+							<p>managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline" target="_blank">beaudigital.co.za</a></p>
 						</div>
 					</div>
 					<div class="row visible-xs visible-sm">
@@ -530,8 +509,7 @@
 							<p>
 								2018 © Avion Express. All Rights Reserved.
 								<br>
-								managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
-								 target="_blank">beaudigital.co.za</a>
+								managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline" target="_blank">beaudigital.co.za</a>
 							</p>
 						</div>
 					</div>

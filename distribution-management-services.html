@@ -66,8 +66,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="index_files/css_002.css"> 
-	<link rel="stylesheet" type="text/css" href="index_files/css.css"> 
+	<link rel="stylesheet" type="text/css" href="index_files/css_002.css">
+	<link rel="stylesheet" type="text/css" href="index_files/css.css">
 	<link rel="stylesheet" href="index_files/bootstrap.css">
 	<link rel="stylesheet" href="index_files/style.min.css">
 	<link rel="stylesheet" href="index_files/header-v6.min.css">
@@ -87,7 +87,9 @@
 	<link rel="stylesheet" href="index_files/beaudigital-spacing.css">
 	<link rel="stylesheet" href="index_files/custom.min.css">
 	<link rel="stylesheet" href="css/site.css">
-	<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script> <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script>
+	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
 </head>
 <body class="header-fixed header-fixed-space ng-scope" ng-app="ngCvgxApp" ng-controller="cvgxController" style="margin-bottom: 140px;">
 	<div class="wrapper">
@@ -186,18 +188,6 @@
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Services</a>
 											<a href="" title="Distribution Management Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Distribution Management Services</a>
-										</li>
-										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="freight-solutions.html" title="Freight Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight Solutions</a>
-											<a href="" title="Freight Solutions" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Freight Solutions</a>
-										</li>
-										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="distribution-management-solutions.html" title="Distribution Management Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Solutions</a>
-											<a href="" title="Distribution Management Solutions" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Distribution Management Solutions</a>
 										</li>
 									</ul>
 								</li>
@@ -304,17 +294,11 @@
 							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Services <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="courier-and-freight-services.html" title="Courier and Freight Services" ng-bind-html="droppage.title" target="_self"
-									 class="ng-binding">Courier and Freight Services</a></li>
+									 href="courier-and-freight-services.html" title="Courier and Freight Services" ng-bind-html="droppage.title"
+									 target="_self" class="ng-binding">Courier and Freight Services</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope active"><a
 									 href="distribution-management-services.html" title="Distribution Management Services" ng-bind-html="droppage.title"
 									 target="_self" class="ng-binding">Distribution Management Services</a></li>
-								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="freight-solutions.html" title="Freight Solutions" ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight
-										Solutions</a></li>
-								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="distribution-management-solutions.html" title="Distribution Management Solutions" ng-bind-html="droppage.title"
-									 target="_self" class="ng-binding">Distribution Management Solutions</a></li>
 							</ul>
 						</li>
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
@@ -351,12 +335,8 @@
 				</div>
 			</div>
 		</div>
-<<<<<<< HEAD:distribution-management-services.html
 		<!--=== End Header ===-->
 		<div class="pg-hdg ng-binding" ng-bind-html="header">Distribution Management Services</div>
-=======
-		<div class="pg-hdg ng-binding" ng-bind-html="header">International Courier Services</div>
->>>>>>> 0ef4d2e893328cfd296c85d9b42c6c81710bf55d:international-courier-services.html
 		<div class="container-fluid padding-top-60 ng-hide" ng-hide="content['content-item']['short-desc'].length == 0">
 			<div class="row-fluid ng-binding" ng-bind-html="content['content-item']['short-desc']"></div>
 		</div>
@@ -370,145 +350,146 @@
 							</div>
 							<div class="panel-body">
 								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-file-contract">&nbsp;</em></div>
-								<div class="col-md-10 col-lg-11 no-padding">Ewaybill is our service partners online tool where customers can generate 
-									their own electronic waybills. A customer can now generate an electronic waybill, book a collection and email the 
-									waybill to the collection point. The collection point then prints the waybill and attaches it to the shipment. 
-									Customers on can also load addresses into their address book. This is convenient for sending shipments to the same 
-									address on a regular basis. With ewaybill you can set up multiple users on your ewaybill account and set their user 
+								<div class="col-md-10 col-lg-11 no-padding">Ewaybill is our service partners online tool where customers can
+									generate
+									their own electronic waybills. A customer can now generate an electronic waybill, book a collection and email
+									the
+									waybill to the collection point. The collection point then prints the waybill and attaches it to the shipment.
+									Customers on can also load addresses into their address book. This is convenient for sending shipments to the
+									same
+									address on a regular basis. With ewaybill you can set up multiple users on your ewaybill account and set their
+									user
 									level to administrator or user for security purposes.</div>
 							</div>
 						</div>
 					</div>
-
 					<div class="col-sm-12">
-							<div class="panel panel-default equal-height-column">
-								<div class="panel-heading text-center">
-									<h2 class="color-dark-blue">Booking A Collection</h2> 
-								</div>
-								<div class="panel-body">
-									<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-book-open">&nbsp;</em></div>
-									<div class="col-md-10 col-lg-11 no-padding">This user-friendly module automatically flags our system with your details. 
-										The details are verified by an operator and then electronically transferred to our Route Manager. The Route manager 
-										assigns your collection to a route and your collection details are electronically transferred to our driver's radio. 
-										Our vehicles are all installed with radios which have an LED display as well as normal voice facilities. The radios 
-										operate on a digital trucking network, which verifies that the unit receives the message and flags our system with a 
-										receipt message.</div>
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">Booking A Collection</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-book-open">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">This user-friendly module automatically flags our system with your
+									details.
+									The details are verified by an operator and then electronically transferred to our Route Manager. The Route
+									manager
+									assigns your collection to a route and your collection details are electronically transferred to our driver's
+									radio.
+									Our vehicles are all installed with radios which have an LED display as well as normal voice facilities. The
+									radios
+									operate on a digital trucking network, which verifies that the unit receives the message and flags our system
+									with a
+									receipt message.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">Online Quotations</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-file-invoice-dollar">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">All quotations requested online are stored indefinitely.
+									On calculating a quote the system will issue you with a unique quote number for reference
+									purposes. Should the quote be accepted, a waybill number can be referenced to the quote at a
+									later stage which will flag our accounts department, on invoicing, to ensure that there are
+									no discrepancies.
 								</div>
 							</div>
 						</div>
-
-						<div class="col-sm-12">
-								<div class="panel panel-default equal-height-column">
-									<div class="panel-heading text-center">
-										<h2 class="color-dark-blue">Online Quotations</h2> 
-									</div>
-									<div class="panel-body">
-										<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-file-invoice-dollar">&nbsp;</em></div>
-										<div class="col-md-10 col-lg-11 no-padding">All quotations requested online are stored indefinitely.
-												On calculating a quote the system will issue you with a unique quote number for reference 
-												purposes. Should the quote be accepted, a waybill number can be referenced to the quote at a 
-												later stage which will flag our accounts department, on invoicing, to ensure that there are 
-												no discrepancies.
-												</div>
-									</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">Track & Trace</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-route">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">This facility allows you to track your parcel from the time of
+									collection
+									to delivery. Our parcels are electronically scanned at every routing/loading point in our system and
+									automatically
+									updated to our database.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">Accounts</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-user">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">Statements and invoices are available online. A user-friendly drill
+									down
+									facility allows you to start with the statement, drill down to invoice, costing and finally to the pod image.
+									Management reports illustrating usage per service/destination ... are available on line and are tailor-made
+									to suit your business.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">One number tracking and billing system </h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-file-invoice">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">Avion Express can deliver on your documentation and use your number
+									(invoice/delivery note) as the waybill number. Your documentation is signed on delivery and imaged for access
+									on the Internet. Design contents must meet our requirements.
+									This cuts out a huge administrative nightmare of matching your internal numbers to waybill numbers when
+									tracing a parcel or reconciling your account.
 								</div>
 							</div>
-
-
-							<div class="col-sm-12">
-									<div class="panel panel-default equal-height-column">
-										<div class="panel-heading text-center">
-											<h2 class="color-dark-blue">Track & Trace</h2> 
-										</div>
-										<div class="panel-body">
-											<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-route">&nbsp;</em></div>
-											<div class="col-md-10 col-lg-11 no-padding">This facility allows you to track your parcel from the time of collection 
-												to delivery. Our parcels are electronically scanned at every routing/loading point in our system and automatically 
-												updated to our database.</div>
-										</div>
-									</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">POD Images</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-file-image">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">All POD's are imaged and available for viewing or downloading off
+									the Internet.
+									A mailing facility is also available whereby you enter the waybill numbers of PO D's that you require and the
+									system
+									automatically e-mails them to you as they become available.
 								</div>
-
-
-								<div class="col-sm-12">
-										<div class="panel panel-default equal-height-column">
-											<div class="panel-heading text-center">
-												<h2 class="color-dark-blue">Accounts</h2> 
-											</div>
-											<div class="panel-body">
-												<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-user">&nbsp;</em></div>
-												<div class="col-md-10 col-lg-11 no-padding">Statements and invoices are available online. A user-friendly drill down 
-													facility allows you to start with the statement, drill down to invoice, costing and finally to the pod image. 
-													Management reports illustrating usage per service/destination ... are available on line and are tailor-made 
-													to suit your business.</div>
-											</div>
-										</div>
-									</div>
-
-
-									<div class="col-sm-12">
-											<div class="panel panel-default equal-height-column">
-												<div class="panel-heading text-center">
-													<h2 class="color-dark-blue">One number tracking and billing system </h2> 
-												</div>
-												<div class="panel-body">
-													<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-file-invoice">&nbsp;</em></div>
-													<div class="col-md-10 col-lg-11 no-padding">Avion Express can deliver on your documentation and use your number (invoice/delivery note) as the waybill number. Your documentation is signed on delivery and imaged for access on the Internet. Design contents must meet our requirements.
-															This cuts out a huge administrative nightmare of matching your internal numbers to waybill numbers when tracing a parcel or reconciling your account.
-															</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-sm-12">
-												<div class="panel panel-default equal-height-column">
-													<div class="panel-heading text-center">
-														<h2 class="color-dark-blue">POD Images</h2>
-													</div>
-													<div class="panel-body">
-														<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-file-image">&nbsp;</em></div>
-														<div class="col-md-10 col-lg-11 no-padding">All POD's are imaged and available for viewing or downloading off the Internet.
-																A mailing facility is also available whereby you enter the waybill numbers of PO D's that you require and the system
-																 automatically e-mails them to you as they become available.
-																</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-sm-12">
-													<div class="panel panel-default equal-height-column">
-														<div class="panel-heading text-center">
-															<h2 class="color-dark-blue">Main Centres</h2> 
-														</div>
-														<div class="panel-body">
-															<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-warehouse">&nbsp;</em></div>
-															<div class="col-md-10 col-lg-11 no-padding">Main centres are Johannesburg, Pretoria, Pietermaritzburg, Polokwane, Nelspruit, 
-																Durban, Cape Town, Port Elizabeth, East London, George, Bloemfontein and Kimberley. Deliveries and collections 50km out 
-																of a main centre will incur the regional surcharge and will affect delivery times. Saturday deliveries in a regional area
-																will require prior arrangements and an additional surcharge will be negotiated at the time. Should prior arrangements not 
-																be made, delivery will not take place. Avion Express will automatically apply a surcharge to all waybills for collection 
-																or delivery to or from any of the following: Chainstores/mines/power stations/plots or farms/rural areas or townships/game 
-																reserves or National Parks. Drive-aways will be billed out on a per km basis on a round trip. (Please note: delivery times 
-																to such areas will also be affected).
-																	
-																	</div>
-														</div>
-													</div>
-												</div>
-
-
-
-									
-
-								
-
-
-					
-					
-					
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">Main Centres</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-warehouse">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">Main centres are Johannesburg, Pretoria, Pietermaritzburg,
+									Polokwane, Nelspruit,
+									Durban, Cape Town, Port Elizabeth, East London, George, Bloemfontein and Kimberley. Deliveries and collections
+									50km out
+									of a main centre will incur the regional surcharge and will affect delivery times. Saturday deliveries in a
+									regional area
+									will require prior arrangements and an additional surcharge will be negotiated at the time. Should prior
+									arrangements not
+									be made, delivery will not take place. Avion Express will automatically apply a surcharge to all waybills for
+									collection
+									or delivery to or from any of the following: Chainstores/mines/power stations/plots or farms/rural areas or
+									townships/game
+									reserves or National Parks. Drive-aways will be billed out on a per km basis on a round trip. (Please note:
+									delivery times
+									to such areas will also be affected).
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			
 		</div>
 		<div class="footer-v1 bg-cvgx-red-img" style="position: absolute; bottom: 0px; width: 100%; height: 62px;">
 			<div class="footer">
@@ -549,10 +530,6 @@
 									 ng-bind-html="page.title" class="ng-binding">Courier and Freight Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-services.html" title="Distribution Management Services"
 									 ng-bind-html="page.title" class="ng-binding">Distribution Management Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="freight-solutions.html" title="Freight Solutions"
-									 ng-bind-html="page.title" class="ng-binding">Freight Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-solutions.html" title="Distribution Management Solutions"
-									 ng-bind-html="page.title" class="ng-binding">Distribution Management Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 							</ul>
 						</div>
 						<div class="col-md-4 map-img md-margin-bottom-40">
@@ -584,8 +561,7 @@
 							</p>
 						</div>
 						<div class="col-md-3 text-right">
-							<p>managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
-								 target="_blank">beaudigital.co.za</a></p>
+							<p>managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline" target="_blank">beaudigital.co.za</a></p>
 						</div>
 					</div>
 					<div class="row visible-xs visible-sm">
@@ -593,8 +569,7 @@
 							<p>
 								2018 © Avion Express. All Rights Reserved.
 								<br>
-								managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
-								 target="_blank">beaudigital.co.za</a>
+								managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline" target="_blank">beaudigital.co.za</a>
 							</p>
 						</div>
 					</div>
@@ -679,21 +654,6 @@
 	<!--[if lt IE 10]>
 		<script src="~/assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
 		<![endif]-->
-	<script type="text/javascript">
-<<<<<<< HEAD:distribution-management-services.html
-		$(document).ready(function () {
-			App.init();
-			new WOW().init();
-		});
-		cmsRoot = 'za';
-		cmsUrls = 'paragraph/short-contact-details';
-	</script>
-	<script type="text/javascript">
-		cmsUrl = 'za/Services/distribution-management-services';
-=======
-		cmsUrl = 'za/products/international-courier-services';
->>>>>>> 0ef4d2e893328cfd296c85d9b42c6c81710bf55d:international-courier-services.html
-	</script>
 	<!--[if lt IE 9]>
 	<script src="~/assets/plugins/respond.js"></script>
 	<script src="~/assets/plugins/html5shiv.js"></script>
