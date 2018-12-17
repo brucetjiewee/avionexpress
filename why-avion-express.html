@@ -4,7 +4,6 @@
 <!--[if !IE]><!-->
 <html style="position: relative; min-height: 100%;" lang="en">
 <!--<![endif]-->
-
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<style type="text/css">
@@ -98,10 +97,6 @@
 	<link rel="stylesheet" href="index_files/sky-forms.min.css">
 	<link rel="stylesheet" href="index_files/custom-sky-forms.min.css">
 	<!--[if lt IE 9]><link rel="stylesheet" href="~/assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
-
-
-
-
 	<!-- CSS Theme -->
 	<link rel="stylesheet" href="index_files/light.min.css" id="style_color">
 	<link rel="stylesheet" href="index_files/dark.min.css">
@@ -109,14 +104,11 @@
 	<link rel="stylesheet" href="index_files/bootstrap-xl.min.css">
 	<link rel="stylesheet" href="index_files/beaudigital-spacing.css">
 	<link rel="stylesheet" href="index_files/custom.min.css">
-
+	<link rel="stylesheet" href="css/site.css">
 	<!--google analytics-->
 </head>
 
 <body class="header-fixed header-fixed-space ng-scope" ng-app="ngCvgxApp" ng-controller="cvgxController" style="margin-bottom: 140px;">
-
-
-
 	<div class="wrapper">
 		<!--=== Header ===-->
 		<!-- For Printing -->
@@ -141,7 +133,6 @@
 							<span class="sr-only">Toggle navigation</span>
 							<i class="fa fa-3x fa-bars color-white text-tight"></i>
 						</button>
-
 						<!-- Navbar Brand -->
 						<div class="navbar-brand">
 							<img class="nav-diag hidden-xs hidden-sm hidden-md" src="index_files/nav-diag-left.jpg">
@@ -154,30 +145,23 @@
 						</div>
 						<!-- ENd Navbar Brand -->
 					</div>
-
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
 						<div class="menu-container">
-
 							<ul class="nav navbar-nav hidden-xs hidden-sm">
 								<li class="dropdown">
-
 									<a href="javascript:void(0);" title="South Africa" style="padding-top: 18px;" data-toggle="dropdown" target="_self">
 										<img class="" src="index_files/flag-za.png">
 									</a>
 
 								</li>
 							</ul>
-
 							<div class="navbar-exodus bg-color-white pull-right clearfix hidden-xs hidden-sm margin-left-10 margin-right-10"
 							 style="display: none;">
 								<img class="nav-diag hidden-md pull-right" src="index_files/nav-diag-right.jpg">
 								<img class="nav-diag hidden-md" src="index_files/nav-diag-left.jpg">
-
 							</div>
-
 							<ul class="nav navbar-nav">
-
 								<!-- ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope">
@@ -301,8 +285,6 @@
 										</li>
 									</ul>
 								</li>
-
-
 							</ul>
 						</div>
 					</div>
@@ -422,7 +404,6 @@
 								<!-- ngRepeat: droppage in page.page -->
 							</ul>
 						</li><!-- end ngRepeat: page in mainnav.page -->
-
 					</ul>
 				</div>
 				<!--/end container-->
@@ -430,23 +411,14 @@
 			<!--/navbar-collapse-->
 		</div>
 		<!--=== End Header ===-->
-
-
-
-
-
-
 		<div class="pg-hdg ng-binding" ng-bind-html="header">Why Avion Express?</div>
-
 		<div class="container-fluid padding-top-60 ng-hide" ng-hide="content['content-item']['short-desc'].length == 0">
 			<div class="row-fluid ng-binding" ng-bind-html="content['content-item']['short-desc']"></div>
 		</div>
-
 		<div class="container padding-top-60 ng-binding" ng-bind-html="content['content-item']['long-desc']" ng-hide="content['content-item']['long-desc'].length == 0">
 			<div> We aim to deliver the best services that is reliable at an affordable rate. Reliability, Delivery and Professionalism at your finger tips.		
 				At <strong class="color-cvgx-red">Avion Express</strong>
 				we are your express logistics solutions.</div>
-
 			<div class="row padding-top-30">
 				<div class="col-xs-3 col-sm-2 col-lg-1 padding-top-20 text-right"><em class="fas fa-directions text-xxxl">&nbsp;</em></div>
 
@@ -461,7 +433,6 @@
 						   courier support from our expert customer service team.</p>
 				</div>
 			</div>
-
 			<div class="row padding-top-30">
 				<div class="col-xs-3 col-sm-2 col-lg-1 padding-top-20 text-right"><em class="fas fa-globe text-xxxl">&nbsp;</em></div>
 
@@ -473,13 +444,10 @@
 						collection, tracking your package, and more features.</p>
 				</div>
 			</div>
-
 			<div class="row padding-top-30">
 				<div class="col-xs-3 col-sm-2 col-lg-1 padding-top-20 text-right"><em class="fas fa-globe text-xxxl">&nbsp;</em></div>
-
 				<div class="col-xs-9 col-sm-10 col-lg-11">
 					<h2>Empowerment</h2>
-
 					<p><strong class="color-cvgx-red">Avion Express</strong> is a 100% black owned business and has achieved a <strong> level 1 BEE Certification</strong>
 						 . Avion Express 
 						identifies and develops young african graduates and school leavers and aims to mentor these PDI individuals 
@@ -489,7 +457,6 @@
 						Black Economic Empowerment initiatives.&nbsp;<strong>.</strong></p>
 				</div>
 			</div>
-
 			<div class="row padding-top-30">
 				<div class="col-xs-3 col-sm-2 col-lg-1 padding-top-20 text-right"><em class="fas fa-handshake text-xxxl">&nbsp;</em></div>
 
@@ -505,33 +472,19 @@
 						are commited to ensuring you receive a reliable and cost effective service at all times.</p>
 				</div>
 			</div>
-
 			<div class="row">
 				<div class="col-xs-12 padding-top-20">
 					<div class="row">
-						<div class="col-lg-2"><img class="center-block img-responsive" src="img/partners1.png"></div>
-
-						<div class="col-lg-2"><img class="center-block img-responsive" src="img/partners2.png"></div>
-
-						<div class="col-lg-2"><img class="center-block img-responsive" src="img/partners3.png"></div>
-
-						<div class="col-lg-2"><img class="center-block img-responsive" src="img/partners4.png"></div>
-						
+						<div class="col-lg-3"><img class="center-block img-responsive partner-logo" src="img/partners1.png"></div>
+						<div class="col-lg-3"><img class="center-block img-responsive partner-logo" src="img/partners2.png"></div>
+						<div class="col-lg-3"><img class="center-block img-responsive partner-logo" src="img/partners3.png"></div>
+						<div class="col-lg-3"><img class="center-block img-responsive partner-logo" src="img/partners4.png"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
-
-
-
-
-
 		<!--=== Footer Version 1 ===-->
 		<div class="footer-v1 bg-cvgx-red-img" style="position: absolute; bottom: 0px; width: 100%; height: 62px;">
-
-
 			<div class="footer">
 				<div class="container">
 					<div class="row">
@@ -633,14 +586,12 @@
 		<!--=== End Footer Version 1 ===-->
 	</div>
 	<!--/wrapper-->
-
 	<!-- SPINNING WAITER OVERLAY -->
 	<div class="waiter" style="display: none;">
 		<i class="fa fa-3x fa-spin fa-circle-o-notch"></i><br>
 		<h3>Please wait...</h3>
 	</div>
 	<!-- /SPINNING WAITER OVERLAY -->
-
 	<!-- Large modal -->
 	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
 	 aria-hidden="true">
@@ -725,14 +676,6 @@
 	<!--[if lt IE 10]>
 		<script src="~/assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
 		<![endif]-->
-	<!-- ANGULARJS -->
-
-
-
-
-
-
-
 	<script type="text/javascript">
 		$(document).ready(function () {
 			App.init();
@@ -746,17 +689,11 @@
 	<script type="text/javascript">
 		cmsUrl = 'za/why-avion-express';
 	</script>
-
-
 	<!--[if lt IE 9]>
 	<script src="~/assets/plugins/respond.js"></script>
 	<script src="~/assets/plugins/html5shiv.js"></script>
 	<script src="~/assets/plugins/placeholder-IE-fixes.js"></script>
 	<![endif]-->
-
-
-
 	<div id="topcontrol" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;" title="Scroll Back to Top"></div>
 </body>
-
 </html>

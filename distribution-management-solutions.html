@@ -98,10 +98,6 @@
 	<link rel="stylesheet" href="index_files/sky-forms.min.css">
 	<link rel="stylesheet" href="index_files/custom-sky-forms.min.css">
 	<!--[if lt IE 9]><link rel="stylesheet" href="~/assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
-
-
-
-
 	<!-- CSS Theme -->
 	<link rel="stylesheet" href="index_files/light.min.css" id="style_color">
 	<link rel="stylesheet" href="index_files/dark.min.css">
@@ -109,14 +105,10 @@
 	<link rel="stylesheet" href="index_files/bootstrap-xl.min.css">
 	<link rel="stylesheet" href="index_files/beaudigital-spacing.css">
 	<link rel="stylesheet" href="index_files/custom.min.css">
-
+	<link rel="stylesheet" href="css/site.css">
 	<!--google analytics-->
 </head>
-
 <body class="header-fixed header-fixed-space ng-scope" ng-app="ngCvgxApp" ng-controller="cvgxController" style="margin-bottom: 140px;">
-
-
-
 	<div class="wrapper">
 		<!--=== Header ===-->
 		<!-- For Printing -->
@@ -168,16 +160,12 @@
 
 								</li>
 							</ul>
-
 							<div class="navbar-exodus bg-color-white pull-right clearfix hidden-xs hidden-sm margin-left-10 margin-right-10"
 							 style="display: none;">
 								<img class="nav-diag hidden-md pull-right" src="index_files/nav-diag-right.jpg">
 								<img class="nav-diag hidden-md" src="index_files/nav-diag-left.jpg">
-
 							</div>
-
 							<ul class="nav navbar-nav">
-
 								<!-- ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope">
@@ -301,8 +289,6 @@
 										</li>
 									</ul>
 								</li>
-
-
 							</ul>
 						</div>
 					</div>
@@ -325,7 +311,6 @@
 				<!-- Topbar -->
 				<div class="topbar">
 					<ul class="loginbar pull-right" style="padding-left : 0px;">
-
 						<li class="topbar-devider hidden-xs hidden-sm" style="display: none;"></li>
 						<li class="hoverSelector">
 							<a href="javascript:void(0);" class="dropdown-toggle" target="_self">
@@ -422,7 +407,6 @@
 								<!-- ngRepeat: droppage in page.page -->
 							</ul>
 						</li><!-- end ngRepeat: page in mainnav.page -->
-
 					</ul>
 				</div>
 				<!--/end container-->
@@ -430,18 +414,10 @@
 			<!--/navbar-collapse-->
 		</div>
 		<!--=== End Header ===-->
-
-
-
-
-
-
 		<div class="pg-hdg ng-binding" ng-bind-html="header">Distribution Management Solutions</div>
-
 		<div class="container-fluid padding-top-60 ng-hide" ng-hide="content['content-item']['short-desc'].length == 0">
 			<div class="row-fluid ng-binding" ng-bind-html="content['content-item']['short-desc']"></div>
 		</div>
-
 		<div class="container padding-top-60 ng-binding" ng-bind-html="content['content-item']['long-desc']" ng-hide="content['content-item']['long-desc'].length == 0">
 			<div class="col-md-4"><img class="center-block img responsive" src="img/distribution.jpg"></div>
 
@@ -450,34 +426,21 @@
 					is able to collaboratively construct an effective solution for your
 					distribution requirements. We offer specialist advice in many areas,
 					with specific successes in the following:</p>
-
 				<ul>
 					<li>Outsourced distribution of marketing campaigns</li>
 					<li>Mailroom Management</li>
 					<li>Outsourced Warehousing</li>
 					<li>Technical Deliveries and Supply Chain solutions</li>
 				</ul>
-
 				<p>If all you need is a little advice on how best to configure your
 					distribution, or to work through a re-engineered solution for your
 					supply chain, our consultants are ready to assist at your call.</p>
-
 				<p>&nbsp;</p>
-
 				<p><a class="btn btn-lg sharp-corners bg-color-cvgx-red" href="contact-us.html">CONTACT US</a></p>
 			</div>
 		</div>
-
-
-
-
-
-
-
 		<!--=== Footer Version 1 ===-->
 		<div class="footer-v1 bg-cvgx-red-img" style="position: absolute; bottom: 0px; width: 100%; height: 62px;">
-
-
 			<div class="footer">
 				<div class="container">
 					<div class="row">
@@ -671,14 +634,6 @@
 	<!--[if lt IE 10]>
 		<script src="~/assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
 		<![endif]-->
-	<!-- ANGULARJS -->
-
-
-
-
-
-
-
 	<script type="text/javascript">
 		$(document).ready(function () {
 			App.init();
@@ -687,21 +642,14 @@
 		cmsRoot = 'za';
 		cmsUrls = 'paragraph/short-contact-details';
 	</script>
-
-
 	<script type="text/javascript">
 		cmsUrl = 'za/products/distribution-management-solutions';
 	</script>
-
-
 	<!--[if lt IE 9]>
 	<script src="~/assets/plugins/respond.js"></script>
 	<script src="~/assets/plugins/html5shiv.js"></script>
 	<script src="~/assets/plugins/placeholder-IE-fixes.js"></script>
 	<![endif]-->
-
-
-
 	<div id="topcontrol" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;" title="Scroll Back to Top"></div>
 </body>
 

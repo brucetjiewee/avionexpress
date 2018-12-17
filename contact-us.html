@@ -98,10 +98,6 @@
 	<link rel="stylesheet" href="index_files/sky-forms.min.css">
 	<link rel="stylesheet" href="index_files/custom-sky-forms.min.css">
 	<!--[if lt IE 9]><link rel="stylesheet" href="~/assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
-
-
-
-
 	<!-- CSS Theme -->
 	<link rel="stylesheet" href="index_files/light.min.css" id="style_color">
 	<link rel="stylesheet" href="index_files/dark.min.css">
@@ -109,14 +105,10 @@
 	<link rel="stylesheet" href="index_files/bootstrap-xl.min.css">
 	<link rel="stylesheet" href="index_files/beaudigital-spacing.css">
 	<link rel="stylesheet" href="index_files/custom.min.css">
-
+	<link rel="stylesheet" href="css/site.css">
 	<!--google analytics-->
 </head>
-
 <body class="header-fixed header-fixed-space ng-scope" ng-app="ngCvgxApp" ng-controller="cvgxController" style="margin-bottom: 140px;">
-
-
-
 	<div class="wrapper">
 		<!--=== Header ===-->
 		<!-- For Printing -->
@@ -141,7 +133,6 @@
 							<span class="sr-only">Toggle navigation</span>
 							<i class="fa fa-3x fa-bars color-white text-tight"></i>
 						</button>
-
 						<!-- Navbar Brand -->
 						<div class="navbar-brand">
 							<img class="nav-diag hidden-xs hidden-sm hidden-md" src="index_files/nav-diag-left.jpg">
@@ -154,7 +145,6 @@
 						</div>
 						<!-- ENd Navbar Brand -->
 					</div>
-
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
 						<div class="menu-container">
@@ -168,16 +158,12 @@
 
 								</li>
 							</ul>
-
 							<div class="navbar-exodus bg-color-white pull-right clearfix hidden-xs hidden-sm margin-left-10 margin-right-10"
 							 style="display: none;">
 								<img class="nav-diag hidden-md pull-right" src="index_files/nav-diag-right.jpg">
 								<img class="nav-diag hidden-md" src="index_files/nav-diag-left.jpg">
-
 							</div>
-
 							<ul class="nav navbar-nav">
-
 								<!-- ngRepeat: page in mainnav.page | filter:{ url: '!za/tips'} -->
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope">
@@ -301,8 +287,6 @@
 										</li>
 									</ul>
 								</li>
-
-
 							</ul>
 						</div>
 					</div>
@@ -332,7 +316,6 @@
 								<img style="height : 25px; margin : -3px 0px 0px 0px;" src="index_files/bg-flag-za.jpg">
 								<i class="fa fa-angle-down" style="display: none;"></i>
 							</a>
-
 						</li>
 					</ul>
 				</div>
@@ -430,12 +413,6 @@
 			<!--/navbar-collapse-->
 		</div>
 		<!--=== End Header ===-->
-
-
-
-
-
-
 		<div class="pg-hdg clearfix">
 			<div class="col-xs-12">Contact Us</div>
 			<div class="pg-subhdg col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-xl-6 col-xl-offset-3 ng-binding"
@@ -446,7 +423,6 @@
 					here to help in whatever way we can!</div>
 			</div>
 		</div>
-
 		<form method="post" action="Email.php" class="sky-form">
 			<div class="container padding-top-40">
 				<div class="row">
@@ -543,17 +519,8 @@
 				</div>
 			</div>
 		</form>
-
-
-
-
-
-
-
 		<!--=== Footer Version 1 ===-->
 		<div class="footer-v1 bg-cvgx-red-img" style="position: absolute; bottom: 0px; width: 100%; height: 62px;">
-
-
 			<div class="footer">
 				<div class="container">
 					<div class="row">
@@ -747,14 +714,6 @@
 	<!--[if lt IE 10]>
 		<script src="~/assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
 		<![endif]-->
-	<!-- ANGULARJS -->
-
-
-
-
-
-
-
 	<script type="text/javascript">
 		$(document).ready(function () {
 			App.init();
@@ -763,21 +722,14 @@
 		cmsRoot = 'za';
 		cmsUrls = 'paragraph/short-contact-details';
 	</script>
-
-
 	<script type="text/javascript">
 		cmsUrl = 'za/contact-us';
 	</script>
-
-
 	<!--[if lt IE 9]>
 	<script src="~/assets/plugins/respond.js"></script>
 	<script src="~/assets/plugins/html5shiv.js"></script>
 	<script src="~/assets/plugins/placeholder-IE-fixes.js"></script>
 	<![endif]-->
-
-
-
 	<div id="topcontrol" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;" title="Scroll Back to Top"></div>
 </body>
 
