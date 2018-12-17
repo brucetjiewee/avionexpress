@@ -58,10 +58,6 @@
 		.ng-anchor {
 			position: absolute;
 		}
-		.img-border{
-			border: 1px solid #757575;
-			border-radius:1px;
-		}
 	</style>
 	<title>Avion Express - South Africa</title>
 	<meta charset="utf-8">
@@ -70,8 +66,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="index_files/css_002.css"> 
 	<link rel="stylesheet" type="text/css" href="index_files/css.css"> 
+	<link rel="stylesheet" type="text/css" href="index_files/css_002.css"> 
 	<link rel="stylesheet" href="index_files/bootstrap.css">
 	<link rel="stylesheet" href="index_files/style.min.css">
 	<link rel="stylesheet" href="index_files/header-v6.min.css">
@@ -79,6 +75,7 @@
 	<link rel="stylesheet" href="index_files/animate.min.css">
 	<link rel="stylesheet" href="index_files/styles.min.css">
 	<link rel="stylesheet" href="index_files/line-icons.min.css">
+	<link rel="stylesheet" href="index_files/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
 	<link rel="stylesheet" href="index_files/sky-forms.min.css">
@@ -90,7 +87,7 @@
 	<link rel="stylesheet" href="index_files/beaudigital-spacing.css">
 	<link rel="stylesheet" href="index_files/custom.min.css">
 	<link rel="stylesheet" href="css/site.css">
- 	<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script> <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
+	<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script> <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
 </head>
 <body class="header-fixed header-fixed-space ng-scope" ng-app="ngCvgxApp" ng-controller="cvgxController" style="margin-bottom: 140px;">
 	<div class="wrapper">
@@ -100,7 +97,7 @@
 					<img style="height : 72px;" src="index_files/logo-avion-express.png" alt="Logo">
 				</div>
 				<div class="col-xs-8 text-right" style="line-height : 72px;">
-					https://www.avionexpress.co.za
+					products/freight-solutions.html
 				</div>
 			</div>
 		</div>
@@ -125,7 +122,7 @@
 						<div class="menu-container">
 							<ul class="nav navbar-nav hidden-xs hidden-sm">
 								<li class="dropdown">
-									<a href="javascript:void(0);" title="South Africa" style="padding-top: 18px;" target="_self">
+									<a href="javascript:void(0);" title="South Africa" style="padding-top: 18px;" data-toggle="dropdown" target="_self">
 										<img class="" src="index_files/flag-za.png">
 									</a>
 								</li>
@@ -171,26 +168,26 @@
 								</li>
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope dropdown">
-									<a href="index.html" title="Services" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
-									 target="_self" class="ng-binding ng-hide">Services</a>
-									<a href="index.html" title="Services" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1"
-									 target="_self" class="ng-binding ng-hide">Services</a>
-									<a href="javascript:void(0);" title="Services" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding"
-									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Services <i class="fa fa-angle-down"></i></a>
+									<a href="index.html" title="Products" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
+									 target="_self" class="ng-binding ng-hide">Products</a>
+									<a href="index.html" title="Products" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1"
+									 target="_self" class="ng-binding ng-hide">Products</a>
+									<a href="javascript:void(0);" title="Products" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding"
+									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Products <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="courier-and-freight-services.html" title="Courier and Freight Services" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Courier and Freight Services</a>
-											<a href="" title="Courier and Freight Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Courier and Freight Services</a>
+											<a href="domestic-courier-services.html" title="Domestic Courier Services" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
+											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Domestic Courier Services</a>
+											<a href="" title="Domestic Courier Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
+											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Domestic Courier Services</a>
 										</li>
 										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="distribution-management-services.html" title="Distribution Management Services" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Services</a>
-											<a href="" title="Distribution Management Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Distribution Management Services</a>
+											<a href="international-courier-services.html" title="International Courier Services" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
+											 ng-bind-html="droppage.title" target="_self" class="ng-binding">International Courier Services</a>
+											<a href="" title="International Courier Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
+											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">International Courier Services</a>
 										</li>
-										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
+										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope active">
 											<a href="freight-solutions.html" title="Freight Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight Solutions</a>
 											<a href="" title="Freight Solutions" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
@@ -301,18 +298,18 @@
 							</ul>
 						</li>
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
-							<a href="index.html" title="Services" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide"
-							 ng-show="page.url.length &gt; 0" target="_self">Services</a>
-							<a href="javascript:void(0);" title="Services" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding"
-							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Services <i class="fa fa-angle-down"></i></a>
+							<a href="index.html" title="Products" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide"
+							 ng-show="page.url.length &gt; 0" target="_self">Products</a>
+							<a href="javascript:void(0);" title="Products" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding"
+							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Products <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="courier-and-freight-services.html" title="Courier and Freight Services" ng-bind-html="droppage.title" target="_self"
-									 class="ng-binding">Courier and Freight Services</a></li>
+									 href="domestic-courier-services.html" title="Domestic Courier Services" ng-bind-html="droppage.title" target="_self"
+									 class="ng-binding">Domestic Courier Services</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="distribution-management-services.html" title="Distribution Management Services" ng-bind-html="droppage.title"
-									 target="_self" class="ng-binding">Distribution Management Services</a></li>
-								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
+									 href="international-courier-services.html" title="International Courier Services" ng-bind-html="droppage.title"
+									 target="_self" class="ng-binding">International Courier Services</a></li>
+								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope active"><a
 									 href="freight-solutions.html" title="Freight Solutions" ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight
 										Solutions</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
@@ -354,137 +351,81 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid no-padding-xs-left no-padding-xs-right padding-sm-20 padding-md-30 padding-lg-30 padding-xl-40 text-md ng-binding"
-		 ng-bind-html="content['content-item']['child-item']['long-desc']" ng-hide="content['content-item']['child-item']['long-desc'].length == 0">
-			<div class="container-fluid">
-				<div class="row padding-bottom-40">
-					<div class="col-md-6 col-lg-5 padding-top-35">
-						<div class="row">
-							<div class="text-left text-md padding-left-30 padding-bottom-40 hidden-xs hidden-sm">
-								<div class="padding-bottom-20 padding-top-40"><img alt="" class="img-responsive" src="img/welcome.png"></div>
-								<p><strong>We</strong> are a <em>competitve, reliable and fast</em> domestic and <em>international Courier Solution.</em></p>
-								<p>We <em>provide personal, professional and friendly services</em> through our hands on approach</p>
-							</div>
-							<div class="text-center text-casual padding-bottom-40 visible-xs visible-sm">
-								<div class="col-sm-10 col-sm-offset-1"><img class="center-block img-responsive" src="img/avion-express-logistics-solutions.png"></div>
-								<div class="padding-bottom-20 padding-top-35 padding-left-10 padding-right-10"><img alt="" class="center-block img-responsive"
-									 src="img/welcome.png"></div>
-								<div class="col-sm-12 padding-bottom-15"><strong>Avion Express</strong> delivers a <em>comprehensive</em>
-									logistics and <em>distribution solution</em> with a <em>single point of contact</em> for all forms of
-									transport and freight - <em>Air, Ground &amp; Sea</em>.</div>
-								<div class="col-sm-12 padding-bottom-15">Our <em>consultative approach</em> to distribution management blended
-									with the <em>effective use of technology</em> ensures our customers get value with every shipment, at a
-									surprisingly affordable rate.</div>
-							</div>
-							<div class="text-left hidden-xs hidden-sm padding-left-30 padding-right-30"><a class="btn btn-lg sharp-corners bg-color-cvgx-red"
-								 href="contact-us.html">CONTACT US</a> <a class="btn btn-lg sharp-corners bg-color-cvgx-lightgrey margin-left-10"
-								 href="why-avion-express.html">WHY
-									AVION EXPRESS?</a></div>
-							<div class="text-center visible-xs visible-sm"><a class="btn btn-lg sharp-corners bg-color-cvgx-red" href="contact-us.html">CONTACT
-									US</a><br>
-								<a class="btn btn-lg sharp-corners bg-color-cvgx-lightgrey margin-top-10" href="why-avion-express.html">WHY
-									AVION EXPRESS?</a></div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-offset-1 padding-top-35 hidden-xs hidden-sm"><img class="fadeInLeft img-responsive pull-right wow"
-						 src="img/avion-express-logistics-solutions.png" style="visibility: visible; animation-name: fadeInLeft;"></div>
-				</div>
-			</div>
+		<div class="pg-hdg ng-binding" ng-bind-html="header">Freight Solutions</div>
+		<div class="container-fluid padding-top-60 ng-hide" ng-hide="content['content-item']['short-desc'].length == 0">
+			<div class="row-fluid ng-binding" ng-bind-html="content['content-item']['short-desc']"></div>
 		</div>
-		<div class="" id="showme"></div>
-		<div class="container" style="display: none;">
-			<div class="row padding-top-40">
-				<div class="col-xs-10 col-xs-offset-1 text-md text-center ng-binding" ng-bind-html="content['content-item']['child-item']['long-desc']"
-				 ng-hide="content['content-item']['child-item']['long-desc'].length == 0">
-					<div class="container-fluid">
-						<div class="row padding-bottom-40">
-							<div class="col-md-6 col-lg-5 padding-top-35">
-								<div class="row">
-									<div class="text-left text-md padding-left-30 padding-bottom-40 hidden-xs hidden-sm">
-										<div class="padding-bottom-20 padding-top-40"><img alt="" class="img-responsive" src="img/welcome.png"></div>
-										<p><strong>Avion Express</strong> delivers a <em>comprehensive</em> logistics and <em>distribution solution</em>
-											with a <em>single point of contact</em> for all forms of transport and freight - <em>Air, Ground &amp; Sea</em>.</p>
-										<p>Our <em>consultative approach</em> to distribution management blended with the <em>effective use of
-												technology</em> ensures our customers get value with every shipment, at a surprisingly affordable rate.</p>
-									</div>
-									<div class="text-center text-casual padding-bottom-40 visible-xs visible-sm">
-										<div class="col-sm-10 col-sm-offset-1"><img class="center-block img-responsive" src="img/avion-express-logistics-solutions.png"></div>
-										<div class="padding-bottom-20 padding-top-35 padding-left-10 padding-right-10"><img alt="" class="center-block img-responsive"
-											 src="img/welcome.png"></div>
-										<div class="col-sm-12 padding-bottom-15"><strong>Avion Express</strong> delivers a <em>comprehensive</em>
-											logistics and <em>distribution solution</em> with a <em>single point of contact</em> for all forms of
-											transport and freight - <em>Air, Ground &amp; Sea</em>.</div>
-										<div class="col-sm-12 padding-bottom-15">Our <em>consultative approach</em> to distribution management
-											blended with the <em>effective use of technology</em> ensures our customers get value with every shipment,
-											at a surprisingly affordable rate.</div>
-									</div>
-									<div class="text-left hidden-xs hidden-sm padding-left-30 padding-right-30"><a class="btn btn-lg sharp-corners bg-color-cvgx-red"
-										 href="https://www.avion-express.co.za/contact-us">CONTACT US</a> <a class="btn btn-lg sharp-corners bg-color-cvgx-lightgrey margin-left-10"
-										 href="https://www.avion-express.co.za/why-avion-express">WHY Avion Express?</a></div>
-									<div class="text-center visible-xs visible-sm"><a class="btn btn-lg sharp-corners bg-color-cvgx-red" href="https://www.avion-express.co.za/contact-us">CONTACT
-											US</a><br>
-										<a class="btn btn-lg sharp-corners bg-color-cvgx-lightgrey margin-top-10" href="https://www.avion-express.co.za/why-avion-express">WHY
-											Avion Express?</a></div>
-								</div>
+		<div class="container padding-top-60 ng-binding" ng-bind-html="content['content-item']['long-desc']" ng-hide="content['content-item']['long-desc'].length == 0">
+			<div class="row">
+				<div class="equal-height-columns-not">
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading">
+								<h2 class="color-dark-blue">Roadfreight</h2>
 							</div>
-							<div class="col-md-6 col-lg-offset-1 padding-top-35 hidden-xs hidden-sm"><img class="fadeInLeft img-responsive pull-right wow animated"
-								 src="img/avion-express-logistics-solutions.png" style="visibility: visible; animation-name: fadeInLeft;"></div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="fas fa-road">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">For those heavier and
+									consolidated shipments within the borders of South Africa that you can
+									afford to have delivered within 3 to 4 days, we recommend our economical
+									Deferred National Roadfreight service. We can also offer a Cross-Border
+									Roadfreight service to neighbouring countries on request. We'll need a
+									little notice to effect the collection and transportation, and our call
+									centre agents are on standby to help you through the process.</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row padding-top-20 padding-bottom-40">
-				<div class="col-xs-12 text-center">
-					<button class="btn btn-lg sharp-corners btn-u-dark-blue margin-bottom-10">CONTACT US</button>
-					<button class="btn btn-lg sharp-corners btn-u-light margin-bottom-10">WHY Avion Express?</button>
-					<button class="btn btn-lg sharp-corners btn-u-light" style="display: none;">VIEW OUR Services</button>
-				</div>
-			</div>
-		</div>
-		<div ng-bind-html="content['content-item']['long-desc']" ng-hide="content['content-item']['long-desc'].length == 0"
-		 class="ng-binding">
-			<div class="container-fluid padding-top-60 padding-bottom-30 bg-cvgx-red-img dark-back">
-				<div class="row-fluid">
-					<div class="container">
-						<div class="row">
-							<div class="heading heading-v3 padding-bottom-30">
-								<h1 class="text-center white">AVION EXPRESS OFFERS YOU</h1>
+					<div class="col-sm-6">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">Airfreight</h2>
 							</div>
-							<div class="col-sm-6 col-md-3 text-center padding-bottom-30">
-								<h3><em class="fas fa-atom text-tight text-xxxl white">&nbsp;</em></h3>
-								<h3>Intelligent Convergence<br class="hidden-md">
-									of Distribution Modes</h3>
+							<div class="panel-body">
+								<div class="col-md-4 col-lg-2 text-center text-xxl color-dark-blue"><em class="fas fa-plane">&nbsp;</em></div>
+								<div class="col-md-8 col-lg-10 no-padding">For international or
+									cross-border shipments that are heavier and less time sensitive, we
+									recommend using our Airfreight service. Through relationships with key
+									airfreight forwarders, Avion Express is able to draw on infrastructure,
+									expertise with superior systems at a highly competitive rate.</div>
 							</div>
-							<div class="col-sm-6 col-md-3 text-center padding-bottom-30">
-								<h3><em class="fas fa-hand-holding-heart text-tight text-xxxl white">&nbsp;</em></h3>
-								<h3>Professionalism Delivered<br class="hidden-md">
-									with a Personal Touch</h3>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading">
+								<h2 class="color-dark-blue">Seafreight</h2>
 							</div>
-							<div class="col-sm-6 col-md-3 text-center padding-bottom-30">
-								<h3><em class="fas fa-chart-line text-tight text-xxxl white">&nbsp;</em></h3>
-								<h3>Cost-effective Aggregated<br class="hidden-md">
-									Solutions</h3>
-							</div>
-							<div class="col-sm-6 col-md-3 text-center padding-bottom-30">
-								<h3><em class="fas fa-superscript text-tight text-xxxl white">&nbsp;</em></h3>
-								<h3>Superior Systems<br class="hidden-md">
-									Functionality</h3>
+							<div class="panel-body">
+								<div class="col-md-4 col-lg-2 text-center text-xxl color-dark-blue"><em class="fas fa-ship">&nbsp;</em></div>
+								<div class="col-md-8 col-lg-10 no-padding">For larger shipments that can
+									afford longer lead times, stretching into weeks, we recommend our
+									Seafreight service. This is a more cost effective solution for larger
+									bulk and consolidated shipments. We draw on the capabilities and
+									experience of our partners to give a competitive edge to our customers.</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid padding-top-60 padding-bottom-30">
+			<div class="row">
 				<div class="row">
-					<div class="container">
-						<div class="heading heading-v3 padding-bottom-30">
-							<h2>OUR PARTNERS</h2>
+					<div class="col-sm-2 col-lg-1 hidden-xs padding-left-30 padding-top-15 text-right"><em class="fas fa-oil-can text-xxxl">&nbsp;</em></div>
+					<div class="col-xs-12 col-sm-10 col-lg-11 padding-xs-left-30 padding-xs-right-30">
+						<div class="headline">
+							<h2>Fuel Surcharge</h2>
 						</div>
-						<div class="row">
-							<div class="col-lg-3"><img class="center-block img-responsive partner-logo" src="img/partners1.png"></div>
-							<div class="col-lg-3"><img class="center-block img-responsive partner-logo" src="img/partners2.png"></div>
-							<div class="col-lg-3"><img class="center-block img-responsive partner-logo" src="img/partners3.png"></div>
-							<div class="col-lg-3"><img class="center-block img-responsive partner-logo" src="img/partners4.png"></div>
+						<div class="col-xs-2 visible-xs text-right"><em class="fas fa-oil-can text-xxl">&nbsp;</em></div>
+						<div class="col-xs-10 col-sm-12 no-padding padding-xs-left-20">
+							<p>Please note that all tariffs are subject to a fluctuating fuel
+								surcharge due to the extreme volatility of the Oil price, and
+								subsequently jet fuel. This is a percentage surcharge calculated from an
+								index to the base tariff, which is based on the price of fuel one month
+								in arrears, for example, December's fuel surcharge will be based on the
+								average fuel price for October. Whilst we make every attempt to
+								minimise the impact, this is an industry norm and is passed from
+								airlines to carriers to customers. The index is based on an industry
+								standard, being the <a href="http://www.eia.doe.gov/pub/oil_gas/petroleum/data_publications/weekly_petroleum_status_report/current/pdf/table15.pdf"
+								 target="_blank">Rotterdam ARA Index</a> which we welcome our customers to view.</p>
 						</div>
 					</div>
 				</div>
@@ -522,13 +463,13 @@
 						</div>
 						<div class="col-md-4 md-margin-bottom-40">
 							<div class="headline">
-								<h2>Our Services</h2>
+								<h2>Our Products</h2>
 							</div>
 							<ul class="list-unstyled link-list">
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="courier-and-freight-services.html" title="Courier and Freight Services"
-									 ng-bind-html="page.title" class="ng-binding">Courier and Freight Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-services.html" title="Distribution Management Services"
-									 ng-bind-html="page.title" class="ng-binding">Distribution Management Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
+								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="domestic-courier-services.html" title="Domestic Courier Services"
+									 ng-bind-html="page.title" class="ng-binding">Domestic Courier Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
+								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="international-courier-services.html" title="International Courier Services"
+									 ng-bind-html="page.title" class="ng-binding">International Courier Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="freight-solutions.html" title="Freight Solutions"
 									 ng-bind-html="page.title" class="ng-binding">Freight Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-solutions.html" title="Distribution Management Solutions"
@@ -564,7 +505,7 @@
 							</p>
 						</div>
 						<div class="col-md-3 text-right">
-							<p>managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
+							<p>Built and Maintained by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
 								 target="_blank">beaudigital.co.za</a></p>
 						</div>
 					</div>
@@ -573,7 +514,7 @@
 							<p>
 								2018 © Avion Express. All Rights Reserved.
 								<br>
-								managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
+								Built and Maintained by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
 								 target="_blank">beaudigital.co.za</a>
 							</p>
 						</div>
@@ -629,45 +570,11 @@
 					<h1>Contacting Us </h1>
 					<p>If there are any questions regarding this privacy policy you may contact us using the contact us link provided
 						on our site.</p>
-					<h1>What information do we collect? </h1>
-					<p>We do not collect any of your personal information. </p>
-					<p>When contacting us on our site, as appropriate, you may be asked to enter your: name, e-mail address and phone
-						number. You may, however, visit our site anonymously. </p>
-					<h1>What do we use your information for? </h1>
-					<p>Any of the information you provide will only be used to contact you with feedback to your query. Your
-						information, whether public or private, will not be sold, exchanged, transferred, or given to any other company
-						for any reason whatsoever.</p>
-					<h1>How do we protect your information? </h1>
-					<p>We implement a variety of security measures to maintain the safety of your personal information. Our website
-						sits behind a secure HTTPS connection, with up to 256-bit encryption. While we strive to protect your personally
-						identifiable information and user privacy, we cannot guarantee the security of any information you disclose
-						online. We do not make any warranty, express, implied or otherwise, that we will be able to prevent loss, misuse,
-						unauthorized access to, or alteration of personally identifiable information you provide to us. You make any
-						disclosure of personally identifiable information to us at your own risk. We urge you to take every precaution to
-						protect your personally identifiable information when you are on the Internet, including when visiting the Site.</p>
-					<h1>Do we use cookies? </h1>
-					<p>Yes. Cookies are small files that a site or its service provider transfers to your computers hard drive through
-						your Web browser (if you allow) that enables the sites or service providers systems to recognize your browser and
-						capture and remember certain information. This is for your convenience.</p>
-					<h1>Do we disclose any information to outside parties? </h1>
-					<p>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. We
-						may also release your information when we believe release is appropriate to comply with the law, enforce our site
-						policies, or protect ours or others rights, property, or safety. </p>
-					<h1>Online Privacy Policy Only </h1>
-					<p>This online privacy policy applies only to information collected through our website and not to information
-						collected offline.</p>
-					<h1>Your Consent </h1>
-					<p>By using our site, you consent to our online privacy policy.</p>
-					<h1>Changes to our Privacy Policy </h1>
-					<p>If we decide to change our privacy policy, we will post those changes on this page. </p>
-					<h1>Contacting Us </h1>
-					<p>If there are any questions regarding this privacy policy you may contact us using the contact us link provided
-						on our site.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="index_files/jquery.js"></script>
+	<script type="text/javascript" src="index_files/jquery_003.js"></script>
 	<script type="text/javascript" src="index_files/jquery-migrate.js"></script>
 	<script type="text/javascript" src="index_files/bootstrap.js"></script>
 	<script type="text/javascript" src="index_files/back-to-top.min.js"></script>
@@ -684,7 +591,7 @@
 		<div class="bs-size visible-lg" id="bs-size-lg"></div>
 		<div class="bs-size visible-xl" id="bs-size-xl"></div>
 	</div>
-	<script src="index_files/jquery_003.js"></script>
+	<script src="index_files/jquery.js"></script>
 	<script src="index_files/jquery-ui.js"></script>
 	<script src="index_files/jquery_002.js"></script>
 	<!--[if lt IE 9]>
@@ -694,15 +601,7 @@
 		<script src="~/assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
 		<![endif]-->
 	<script type="text/javascript">
-		$(document).ready(function () {
-			App.init();
-			new WOW().init();
-		});
-		cmsRoot = 'za';
-		cmsUrls = 'paragraph/short-contact-details';
-	</script>
-	<script type="text/javascript">
-		cmsUrl = 'za/';
+		cmsUrl = 'za/products/freight-solutions';
 	</script>
 	<!--[if lt IE 9]>
 	<script src="~/assets/plugins/respond.js"></script>
@@ -711,6 +610,4 @@
 	<![endif]-->
 	<div id="topcontrol" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;" title="Scroll Back to Top"></div>
 </body>
-<!--New comment-->
 </html>
- <!--my new comment. MavinLordLegacy has arrived-->

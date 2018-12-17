@@ -88,11 +88,10 @@
 	<link rel="stylesheet" href="index_files/beaudigital-spacing.css">
 	<link rel="stylesheet" href="index_files/custom.min.css">
 	<link rel="stylesheet" href="css/site.css">
-	<!--google analytics-->
+	<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script> <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
 </head>
 <body class="header-fixed header-fixed-space ng-scope" ng-app="ngCvgxApp" ng-controller="cvgxController" style="margin-bottom: 140px;">
 	<div class="wrapper">
-		<!--=== Header ===-->
 		<div class="container visible-print">
 			<div class="row">
 				<div class="col-xs-4">
@@ -103,7 +102,6 @@
 				</div>
 			</div>
 		</div>
-		<!--=== Header v6 ===-->
 		<div class="header-v6 header-classic-dark header-sticky hidden-print">
 			<div class="navbar mega-menu" role="navigation">
 				<div class="container">
@@ -255,11 +253,9 @@
 							</ul>
 						</div>
 					</div>
-					<!--/navbar-collapse-->
 				</div>
 			</div>
 		</div>
-		<!--=== End Header v6 ===-->
 		<div class="header header-dark-not header-sticky hidden-print" style="display: none;">
 			<div class="container">
 				<a class="logo" href="index.html">
@@ -283,7 +279,6 @@
 					<span class="fa fa-bars"></span>
 				</button>
 			</div>
-			<!--/end container-->
 			<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
 				<div class="container">
 					<ul class="nav navbar-nav">
@@ -355,11 +350,8 @@
 						</li>
 					</ul>
 				</div>
-				<!--/end container-->
 			</div>
-			<!--/navbar-collapse-->
 		</div>
-		<!--=== End Header ===-->
 		<div class="pg-hdg">
 			Track my Parcel
 		</div>
@@ -455,7 +447,7 @@
 				</ul>
 			</div>
 		</div>
-		<!--=== Footer Version 1 ===-->
+		<div id="results"></div>
 		<div class="footer-v1 bg-cvgx-red-img" style="position: absolute; bottom: 0px; width: 100%; height: 62px;">
 			<div class="footer">
 				<div class="container">
@@ -521,7 +513,6 @@
 					</div>
 				</div>
 			</div>
-			<!--/footer-->
 			<div class="copyright">
 				<div class="container">
 					<div class="row hidden-xs hidden-sm">
@@ -547,11 +538,8 @@
 					</div>
 				</div>
 			</div>
-			<!--/copyright-->
 		</div>
-		<!--=== End Footer Version 1 ===-->
 	</div>
-	<!--/wrapper-->
 	<div class="waiter" style="display: none;">
 		<i class="fa fa-3x fa-spin fa-circle-o-notch"></i><br>
 		<h3>Please wait...</h3>
@@ -626,12 +614,6 @@
 		<script src="~/assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
 		<![endif]-->
 	<script type="text/javascript">
-		$(document).ready(function () {
-			App.init();
-			new WOW().init();
-		});
-	</script>
-	<script type="text/javascript">
 		pg = 'track-a-package';
 	</script>
 	<script>
@@ -671,15 +653,15 @@
 			'<?xml version="1.0" encoding="utf-8"?>\
 			<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">\
 			<soap12:Body>\
-				<GetTrackingXML xmlns="http://citjnb.co.za/citwebservices/">\
+				<GetTrackingDataset xmlns="http://citjnb.co.za/citwebservices/">\
 				<strUsername>Avion</strUsername>\
 				<strToken>'+token+'</strToken>\
 				<strAccountNo>14771</strAccountNo>\
 				<strWaybillNo>'+trackNo+'</strWaybillNo>\
-				</GetTrackingXML>\
+				</GetTrackingDataset>\
 			</soap12:Body>\
 			</soap12:Envelope>';
-		var url = "http://www.citwebservices.co.za/citwebservices.asmx?WSDL/GetTrackingXML";
+		var url = "http://www.citwebservices.co.za/citwebservices.asmx?WSDL/GetTrackingDataset";
 		$.ajax({
 			type: "POST",
 			url: url ,
@@ -688,7 +670,10 @@
 			contentType: "text/xml; charset=\"utf-8\"",
 			success: function(data,status,req){
 				console.log("your tracking is:");
-				console.log($(data).find("GetTrackingXMLResult").text);
+				var obj = $(data).find("GetTrackingDatasetResult");
+				$('#results').html("").append(obj[0]);
+
+				console.log(obj[0]);
 			},
 			error: processError,
 		});
