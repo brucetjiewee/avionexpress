@@ -172,14 +172,14 @@ appCvgx.controller('cvgxController', function ($scope, cvgxFactory) {
 				for (x = 0; x < data['nav-group'].length; x++) {
 					if (data['nav-group'][x].friendly == cmsRoot + '/main-nav') {
 						$scope.mainnav = data['nav-group'][x];
-					} else if (data['nav-group'][x].friendly == cmsRoot + '/products-nav') {
+					} else if (data['nav-group'][x].friendly == cmsRoot + '/Services-nav') {
 						$scope.productnav = data['nav-group'][x];
 					} else if (data['nav-group'][x].friendly == cmsRoot + '/footer-nav') {
 						$scope.footernav = data['nav-group'][x];
 					}
 				}
 				//console.log($scope.mainnav);
-				//$('.products-nav').show();
+				//$('.Services-nav').show();
 				//$('.main-nav').show();
 			}
 		)

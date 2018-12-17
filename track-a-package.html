@@ -171,24 +171,24 @@
 								</li>
 								<li ng-repeat="page in mainnav.page | filter:{ url: '!za/tips'}" ng-class="{dropdown : (page.page.length &gt; 0)}"
 								 class="ng-scope dropdown">
-									<a href="index.html" title="Products" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
-									 target="_self" class="ng-binding ng-hide">Products</a>
-									<a href="index.html" title="Products" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1"
-									 target="_self" class="ng-binding ng-hide">Products</a>
-									<a href="javascript:void(0);" title="Products" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding"
-									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Products <i class="fa fa-angle-down"></i></a>
+									<a href="index.html" title="Services" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url == '/'"
+									 target="_self" class="ng-binding ng-hide">Services</a>
+									<a href="index.html" title="Services" ng-bind-html="page.title" ng-show="page.url.length &gt; 0 &amp;&amp; page.url != '/' &amp;&amp; page.url.indexOf('http://') == -1"
+									 target="_self" class="ng-binding ng-hide">Services</a>
+									<a href="javascript:void(0);" title="Services" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle ng-binding"
+									 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Services <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="domestic-courier-services.html" title="Domestic Courier Services" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Domestic Courier Services</a>
-											<a href="" title="Domestic Courier Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Domestic Courier Services</a>
+											<a href="courier-and-freight-services.html" title="Courier and Freight Services" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
+											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Courier and Freight Services</a>
+											<a href="" title="Courier and Freight Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
+											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Courier and Freight Services</a>
 										</li>
 										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="international-courier-services.html" title="International Courier Services" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">International Courier Services</a>
-											<a href="" title="International Courier Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">International Courier Services</a>
+											<a href="distribution-management-services.html" title="Distribution Management Services" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
+											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Services</a>
+											<a href="" title="Distribution Management Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
+											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Distribution Management Services</a>
 										</li>
 										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
 											<a href="freight-solutions.html" title="Freight Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
@@ -304,17 +304,17 @@
 							</ul>
 						</li>
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
-							<a href="index.html" title="Products" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide"
-							 ng-show="page.url.length &gt; 0" target="_self">Products</a>
-							<a href="javascript:void(0);" title="Products" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding"
-							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Products <i class="fa fa-angle-down"></i></a>
+							<a href="index.html" title="Services" ng-bind-html="page.title" class="color-cvgx-lightgrey ng-binding ng-hide"
+							 ng-show="page.url.length &gt; 0" target="_self">Services</a>
+							<a href="javascript:void(0);" title="Services" ng-bind-html="page.title + ' ' + downArrowIcon" class="dropdown-toggle color-cvgx-lightgrey ng-binding"
+							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Services <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="domestic-courier-services.html" title="Domestic Courier Services" ng-bind-html="droppage.title" target="_self"
-									 class="ng-binding">Domestic Courier Services</a></li>
+									 href="courier-and-freight-services.html" title="Courier and Freight Services" ng-bind-html="droppage.title" target="_self"
+									 class="ng-binding">Courier and Freight Services</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="international-courier-services.html" title="International Courier Services" ng-bind-html="droppage.title"
-									 target="_self" class="ng-binding">International Courier Services</a></li>
+									 href="distribution-management-services.html" title="Distribution Management Services" ng-bind-html="droppage.title"
+									 target="_self" class="ng-binding">Distribution Management Services</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
 									 href="freight-solutions.html" title="Freight Solutions" ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight
 										Solutions</a></li>
@@ -488,13 +488,13 @@
 						</div>
 						<div class="col-md-4 md-margin-bottom-40">
 							<div class="headline">
-								<h2>Our Products</h2>
+								<h2>Our Services</h2>
 							</div>
 							<ul class="list-unstyled link-list">
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="domestic-courier-services.html" title="Domestic Courier Services"
-									 ng-bind-html="page.title" class="ng-binding">Domestic Courier Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="international-courier-services.html" title="International Courier Services"
-									 ng-bind-html="page.title" class="ng-binding">International Courier Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
+								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="courier-and-freight-services.html" title="Courier and Freight Services"
+									 ng-bind-html="page.title" class="ng-binding">Courier and Freight Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
+								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-services.html" title="Distribution Management Services"
+									 ng-bind-html="page.title" class="ng-binding">Distribution Management Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="freight-solutions.html" title="Freight Solutions"
 									 ng-bind-html="page.title" class="ng-binding">Freight Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-solutions.html" title="Distribution Management Solutions"
@@ -531,7 +531,7 @@
 							</p>
 						</div>
 						<div class="col-md-3 text-right">
-							<p>Built and Maintained by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
+							<p>managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
 								 target="_blank">beaudigital.co.za</a></p>
 						</div>
 					</div>
@@ -540,7 +540,7 @@
 							<p>
 								2018 © Avion Express. All Rights Reserved.
 								<br>
-								Built and Maintained by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
+								managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
 								 target="_blank">beaudigital.co.za</a>
 							</p>
 						</div>
