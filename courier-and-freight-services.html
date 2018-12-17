@@ -66,8 +66,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="index_files/css_002.css"> 
-	<link rel="stylesheet" type="text/css" href="index_files/css.css"> 
+	<link rel="stylesheet" type="text/css" href="index_files/css_002.css">
+	<link rel="stylesheet" type="text/css" href="index_files/css.css">
 	<link rel="stylesheet" href="index_files/bootstrap.css">
 	<link rel="stylesheet" href="index_files/style.min.css">
 	<link rel="stylesheet" href="index_files/header-v6.min.css">
@@ -87,7 +87,9 @@
 	<link rel="stylesheet" href="index_files/beaudigital-spacing.css">
 	<link rel="stylesheet" href="index_files/custom.min.css">
 	<link rel="stylesheet" href="css/site.css">
-	<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script> <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script>
+	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
 </head>
 <body class="header-fixed header-fixed-space ng-scope" ng-app="ngCvgxApp" ng-controller="cvgxController" style="margin-bottom: 140px;">
 	<div class="wrapper">
@@ -186,18 +188,6 @@
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Services</a>
 											<a href="" title="Distribution Management Services" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
 											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Distribution Management Services</a>
-										</li>
-										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="freight-solutions.html" title="Freight Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight Solutions</a>
-											<a href="" title="Freight Solutions" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Freight Solutions</a>
-										</li>
-										<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope">
-											<a href="distribution-management-solutions.html" title="Distribution Management Solutions" ng-show="droppage.url.length &gt; 0 &amp;&amp; droppage.url != '/' &amp;&amp; droppage.template.indexOf('http://') == -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding">Distribution Management Solutions</a>
-											<a href="" title="Distribution Management Solutions" ng-show="droppage.template.length &gt; 0 &amp;&amp; droppage.template.indexOf('http://') &gt; -1"
-											 ng-bind-html="droppage.title" target="_self" class="ng-binding ng-hide">Distribution Management Solutions</a>
 										</li>
 									</ul>
 								</li>
@@ -304,17 +294,11 @@
 							 data-toggle="dropdown" ng-show="page.url.length == 0" target="_self">Services <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" ng-show="page.page.length &gt; 0">
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope active"><a
-									 href="courier-and-freight-services.html" title="Courier and Freight Services" ng-bind-html="droppage.title" target="_self"
-									 class="ng-binding">Courier and Freight Services</a></li>
+									 href="courier-and-freight-services.html" title="Courier and Freight Services" ng-bind-html="droppage.title"
+									 target="_self" class="ng-binding">Courier and Freight Services</a></li>
 								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
 									 href="distribution-management-services.html" title="Distribution Management Services" ng-bind-html="droppage.title"
 									 target="_self" class="ng-binding">Distribution Management Services</a></li>
-								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="freight-solutions.html" title="Freight Solutions" ng-bind-html="droppage.title" target="_self" class="ng-binding">Freight
-										Solutions</a></li>
-								<li ng-repeat="droppage in page.page" ng-class="{active : (currentnav == droppage.url)}" class="ng-scope"><a
-									 href="distribution-management-solutions.html" title="Distribution Management Solutions" ng-bind-html="droppage.title"
-									 target="_self" class="ng-binding">Distribution Management Solutions</a></li>
 							</ul>
 						</li>
 						<li ng-repeat="page in mainnav.page" ng-class="{dropdown : (page.page.length &gt; 0)}" class="ng-scope dropdown">
@@ -351,7 +335,6 @@
 				</div>
 			</div>
 		</div>
-		<!--=== End Header ===-->
 		<div class="pg-hdg ng-binding" ng-bind-html="header">Courier and Freight Services</div>
 		<div class="container-fluid padding-top-60 ng-hide" ng-hide="content['content-item']['short-desc'].length == 0">
 			<div class="row-fluid ng-binding" ng-bind-html="content['content-item']['short-desc']"></div>
@@ -366,139 +349,138 @@
 							</div>
 							<div class="panel-body">
 								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-truck-loading">&nbsp;</em></div>
-								<div class="col-md-10 col-lg-11 no-padding">Use this service for extremely urgent shipments. This is the most expensive service.
-									Arranged only on request. Main & Local delivery lodged on first available flight, delivery within 2 hours of touchdown. Regional courier delivery only done if specific arrangements are made. Surcharge is applicable. </div>
+								<div class="col-md-10 col-lg-11 no-padding">Use this service for extremely urgent shipments. This is the most
+									expensive service.
+									Arranged only on request. Main & Local delivery lodged on first available flight, delivery within 2 hours of
+									touchdown. Regional courier delivery only done if specific arrangements are made. Surcharge is applicable.
+								</div>
 							</div>
 						</div>
 					</div>
-
 					<div class="col-sm-12">
-							<div class="panel panel-default equal-height-column">
-								<div class="panel-heading text-center">
-									<h2 class="color-dark-blue">Dawn Courier</h2>  
-								</div>
-								<div class="panel-body">
-									<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-truck-moving">&nbsp;</em></div>
-									<div class="col-md-10 col-lg-11 no-padding">Use this service for consignment up to 2kgs.
-										If an earlier delivery time is required, it must be specified on waybill and must be arranged prior to shipping. 
-											Everyday by road or air. Main & Local delivery time 09H00 Next morning. 
-											Regional delivery are only done if specific arrangements are made 											 </div>
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">Dawn Courier</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-truck-moving">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">Use this service for consignment up to 2kgs.
+									If an earlier delivery time is required, it must be specified on waybill and must be arranged prior to
+									shipping.
+									Everyday by road or air. Main & Local delivery time 09H00 Next morning.
+									Regional delivery are only done if specific arrangements are made </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">Overnight Courier</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-truck">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">
+									Cost effective service for consignments up to 2kgs.
+									Departs Every day by road or air. Main & Local delivery time 10H30 Next morning.
+									Regional Delivery time within 24 or 48 hours if specific arrangements are made. </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">Non Express Delivery</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-cube">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">
+									Cost effective service for consignments from 2 – 7kgs. Main & Local delivery time next Afternoon or within 48
+									hours. Regional delivery time 48 hours. </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">Roadfreight/Economy</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-road">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding"> Cheapest Service Use this service for consignments over 7kgs.
+									This is the lowest service for goods that is not urgent. Main & Local delivery time 2 – 3 Days. Regional
+									delivery time 48 hours PLUS.
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-12">
-								<div class="panel panel-default equal-height-column">
-									<div class="panel-heading text-center">
-										<h2 class="color-dark-blue">Overnight Courier</h2> 
-									</div>
-									<div class="panel-body">
-										<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-truck">&nbsp;</em></div>
-										<div class="col-md-10 col-lg-11 no-padding">
-												Cost effective service for consignments up to 2kgs. 
-												Departs Every day by road or air. Main & Local delivery time 10H30 Next morning. 
-												Regional Delivery time within 24 or 48 hours if specific arrangements are made.						 </div>
-									</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">International Courier Documents</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-file-alt">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">
+									Use this service for documentation only. Transit Times specified on Zone sheet. </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">International Courier Non-Documents</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-file-alt">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">
+									Use this service when sending items other than documentation. Transit Times specified on Zone sheet. </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">International Deferred Courier</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-plane-departure">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">
+									Similar to courier service, with the same restrictions as international courier service.
+									No one piece can exceed 30kg. Slower service but quicker than air freight. Delivery time as per Transit
+									Guideline. </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">International Cross Border Economy</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-money-check">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">
+									For larger weight consignments to the BLNS countries. Delivery time as per Transit Guideline
 								</div>
 							</div>
-
-							<div class="col-sm-12">
-									<div class="panel panel-default equal-height-column">
-										<div class="panel-heading text-center">
-											<h2 class="color-dark-blue">Non Express Delivery</h2> 
-										</div>
-										<div class="panel-body">
-											<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-cube">&nbsp;</em></div>
-											<div class="col-md-10 col-lg-11 no-padding">
-													Cost effective service for consignments from 2 – 7kgs. Main & Local delivery time next Afternoon or within 48 hours. Regional delivery time 48 hours.					 </div>
-										</div>
-									</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="panel panel-default equal-height-column">
+							<div class="panel-heading text-center">
+								<h2 class="color-dark-blue">International Sea and Air</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-ship">&nbsp;</em></div>
+								<div class="col-md-10 col-lg-11 no-padding">
+									This is for forwarding and commodity that is over 30kg or over – quote will be determined on weight,
+									volumetric and priority of shipment being sent.
+									Quotations must be obtained whereupon transit times will be specified
 								</div>
-
-								<div class="col-sm-12">
-										<div class="panel panel-default equal-height-column">
-											<div class="panel-heading text-center">
-												<h2 class="color-dark-blue">Roadfreight/Economy</h2> 
-											</div>
-											<div class="panel-body">
-												<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-road">&nbsp;</em></div>
-												<div class="col-md-10 col-lg-11 no-padding"> Cheapest Service Use this service for consignments over 7kgs. 
-													This is the lowest service for goods that is not urgent. Main & Local delivery time 2 – 3 Days. Regional delivery time 48 hours PLUS.
-						 </div>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-sm-12">
-											<div class="panel panel-default equal-height-column">
-												<div class="panel-heading text-center">
-													<h2 class="color-dark-blue">International Courier Documents</h2>
-												</div>
-												<div class="panel-body">
-													<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-file-alt">&nbsp;</em></div>
-													<div class="col-md-10 col-lg-11 no-padding">
-															Use this service for documentation only. Transit Times specified on Zone sheet.					 </div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-sm-12">
-												<div class="panel panel-default equal-height-column">
-													<div class="panel-heading text-center">
-														<h2 class="color-dark-blue">International Courier Non-Documents</h2> 
-													</div>
-													<div class="panel-body">
-														<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-file-alt">&nbsp;</em></div>
-														<div class="col-md-10 col-lg-11 no-padding">
-																Use this service when sending items other than documentation. Transit Times specified on Zone sheet.						 </div>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-sm-12">
-													<div class="panel panel-default equal-height-column">
-														<div class="panel-heading text-center">
-															<h2 class="color-dark-blue">International Deferred Courier</h2>
-														</div>
-														<div class="panel-body">
-															<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-plane-departure">&nbsp;</em></div>
-															<div class="col-md-10 col-lg-11 no-padding">
-																	Similar to courier service, with the same restrictions as international courier service. 
-																	No one piece can exceed 30kg. Slower service but quicker than air freight. Delivery time as per Transit Guideline.					 </div>
-														</div>
-													</div>
-												</div>
-
-												<div class="col-sm-12">
-														<div class="panel panel-default equal-height-column">
-															<div class="panel-heading text-center">
-																<h2 class="color-dark-blue">International Cross Border Economy</h2> 
-															</div>
-															<div class="panel-body">
-																<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-money-check">&nbsp;</em></div>
-																<div class="col-md-10 col-lg-11 no-padding">
-																		For larger weight consignments to the BLNS countries. Delivery time as per Transit Guideline					
-																	 </div>
-															</div>
-														</div>
-													</div>
-
-												<div class="col-sm-12">
-															<div class="panel panel-default equal-height-column">
-																<div class="panel-heading text-center">
-																	<h2 class="color-dark-blue">International Sea and Air</h2>
-																</div>
-																<div class="panel-body">
-																	<div class="col-md-2 col-lg-1 text-center text-xxl color-dark-blue"><em class="class= fas fa-ship">&nbsp;</em></div>
-																	<div class="col-md-10 col-lg-11 no-padding">
-																			This is for forwarding and commodity that is over 30kg or over – quote will be determined on weight, volumetric and priority of shipment being sent. 
-																			Quotations must be obtained whereupon transit times will be specified  						
-																		 </div>
-																</div>
-															</div>
-														</div>		
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			
 		</div>
 		<div class="footer-v1 bg-cvgx-red-img" style="position: absolute; bottom: 0px; width: 100%; height: 62px;">
 			<div class="footer">
@@ -526,8 +508,8 @@
 									 ng-bind-html="page.title" class="ng-binding">Contact Us</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="pop('paragraph/privacy-policy')"
 									 title="Read our Privacy Policy">Privacy Policy</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li><a href="Avion Express terms and conditions.pdf" target="_blank"
-									 title="Read our Terms &amp; Conditions">Terms &amp; Conditions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
+									 <li><a href="Avion Express terms and conditions.pdf" target="_blank">Terms
+										&amp; Conditions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 							</ul>
 						</div>
 						<div class="col-md-4 md-margin-bottom-40">
@@ -539,10 +521,6 @@
 									 ng-bind-html="page.title" class="ng-binding">Courier and Freight Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-services.html" title="Distribution Management Services"
 									 ng-bind-html="page.title" class="ng-binding">Distribution Management Services</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="freight-solutions.html" title="Freight Solutions"
-									 ng-bind-html="page.title" class="ng-binding">Freight Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li ng-repeat="page in productnav.page" class="ng-scope"><a href="distribution-management-solutions.html" title="Distribution Management Solutions"
-									 ng-bind-html="page.title" class="ng-binding">Distribution Management Solutions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 							</ul>
 						</div>
 						<div class="col-md-4 map-img md-margin-bottom-40">
@@ -574,8 +552,7 @@
 							</p>
 						</div>
 						<div class="col-md-3 text-right">
-							<p>managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
-								 target="_blank">beaudigital.co.za</a></p>
+							<p>managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline" target="_blank">beaudigital.co.za</a></p>
 						</div>
 					</div>
 					<div class="row visible-xs visible-sm">
@@ -583,8 +560,7 @@
 							<p>
 								2018 © Avion Express. All Rights Reserved.
 								<br>
-								managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline"
-								 target="_blank">beaudigital.co.za</a>
+								managed by <a href="http://www.beaudigital.co.za/" class="color-cvgx-lightgrey no-underline" target="_blank">beaudigital.co.za</a>
 							</p>
 						</div>
 					</div>
@@ -670,21 +646,6 @@
 	<!--[if lt IE 10]>
 		<script src="~/assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
 		<![endif]-->
-	<script type="text/javascript">
-<<<<<<< HEAD:courier-and-freight-services.html
-		$(document).ready(function () {
-			App.init();
-			new WOW().init();
-		});
-		cmsRoot = 'za';
-		cmsUrls = 'paragraph/short-contact-details';
-	</script>
-	<script type="text/javascript">
-		cmsUrl = 'za/Services/courier-and-freight-services';
-=======
-		cmsUrl = 'za/products/domestic-courier-services';
->>>>>>> 0ef4d2e893328cfd296c85d9b42c6c81710bf55d:domestic-courier-services.html
-	</script>
 	<!--[if lt IE 9]>
 	<script src="~/assets/plugins/respond.js"></script>
 	<script src="~/assets/plugins/html5shiv.js"></script>
