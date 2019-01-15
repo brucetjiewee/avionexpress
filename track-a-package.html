@@ -4,6 +4,7 @@
 <!--[if !IE]><!-->
 <html style="position: relative; min-height: 100%;" lang="en">
 <!--<![endif]-->
+
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<style type="text/css">
@@ -20,14 +21,17 @@
 		.uib-datepicker .uib-title {
 			width: 100%;
 		}
+
 		.uib-day button,
 		.uib-month button,
 		.uib-year button {
 			min-width: 100%;
 		}
+
 		.uib-datepicker-popup.dropdown-menu {
 			display: block;
 		}
+
 		.uib-button-bar {
 			padding: 10px 9px 2px;
 		}
@@ -40,6 +44,7 @@
 	</style>
 	<style type="text/css">
 		@charset "UTF-8";
+
 		[ng\:cloak],
 		[ng-cloak],
 		[data-ng-cloak],
@@ -49,12 +54,15 @@
 		.ng-hide:not(.ng-hide-animate) {
 			display: none !important;
 		}
+
 		ng\:form {
 			display: block;
 		}
+
 		.ng-animate-shim {
 			visibility: hidden;
 		}
+
 		.ng-anchor {
 			position: absolute;
 		}
@@ -92,6 +100,7 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123520975-2"></script>
 	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-123520975-2');</script>
 </head>
+
 <body class="header-fixed header-fixed-space ng-scope" ng-app="ngCvgxApp" ng-controller="cvgxController" style="margin-bottom: 140px;">
 	<div class="wrapper">
 		<div class="container visible-print">
@@ -349,7 +358,7 @@
 									<label class="input" style="background-color: none !important;">
 										<i class="icon-prepend fa fa-tag"></i>
 										<input name="trackNo" id="trackNo" placeholder="Waybill Number" ng-model="trackNo" required="required" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required">
-										<button type="button" onclick="GetTrackingXML()" class="btn btn-u btn-u-xs icon-append" title="Find tracking details"><i
+										<button type="button" onclick="getToken()" class="btn btn-u btn-u-xs icon-append" title="Find tracking details"><i
 											 class="fa fa-search"></i></button>
 									</label>
 								</section>
@@ -458,8 +467,8 @@
 									 ng-bind-html="page.title" class="ng-binding">Contact Us</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 								<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg" ng-click="pop('paragraph/privacy-policy')"
 									 title="Read our Privacy Policy">Privacy Policy</a><i class="fa fa-angle-right fa-pull-right"></i></li>
-								<li><a href="Avion Express terms and conditions.pdf" target="_blank"
-									 title="Read our Terms &amp; Conditions">Terms &amp; Conditions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
+								<li><a href="Avion Express terms and conditions.pdf" target="_blank" title="Read our Terms &amp; Conditions">Terms
+										&amp; Conditions</a><i class="fa fa-angle-right fa-pull-right"></i></li>
 							</ul>
 						</div>
 						<div class="col-md-4 md-margin-bottom-40">
@@ -598,7 +607,7 @@
 		function getToken() {
 			var token;
 			var soapRequest =
-				'<?xml version="1.0" encoding="utf-8"?>\
+			'<?xml version="1.0" encoding="utf-8"?>\
 			<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">\
 			<soap12:Body>\
 				<Login xmlns="http://citjnb.co.za/citwebservices/">\
@@ -617,58 +626,80 @@
 				contentType: "text/xml; charset=\"utf-8\"",
 				success: function (data) {
 					token = $(data).find("LoginResult").text();
+					var trackNo = $('#trackNo').val();
+					console.log("your token is: " + token);
+					console.log("your entered tracking number is: " + trackNo);
+					var soapRequest =
+						'<?xml version="1.0" encoding="utf-8"?>\
+						<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">\
+						<soap12:Body>\
+							<GetTrackingXML xmlns="http://citjnb.co.za/citwebservices/">\
+							<strUsername>Avion</strUsername>\
+							<strToken>' +
+							token + '</strToken>\
+							<strAccountNo>14771</strAccountNo>\
+							<strWaybillNo>' + trackNo +
+							'</strWaybillNo>\
+							</GetTrackingXML>\
+						</soap12:Body>\
+						</soap12:Envelope>';
+					var url = "http://www.citwebservices.co.za/citwebservices.asmx?WSDL/GetTrackingXML";
 					$.ajax({
-				type: "POST",
-				url: url,
-				data: soapRequest,
-				dataType: "xml",
-				contentType: "text/xml; charset=\"utf-8\"",
-				success: function (data, status, req) {
-					console.log("your tracking is:");
-					var obj = $(data).find("GetTrackingDatasetResult");
-					$('#results').html("").append(obj[0]);
-					console.log(obj[0]);
-				},
-				error: processError,
-			});
+						type: "POST",
+						url: url,
+						data: soapRequest,
+						dataType: "xml",
+						contentType: "text/xml; charset=\"utf-8\"",
+						success: function (data, status, req) {
+							console.log("your tracking is:");
+							var obj = $(data).find("GetTrackingDatasetResult");
+							$('#results').html("").append(obj[0]);
+							console.log(obj[0]);
+						},
+						error: processError,
+					});
 				},
 				error: processError,
 			});
 			return token;
 		}
-		function GetTrackingXML(token) {
-			var token = getToken();
-			var trackNo = $('#trackNo').val();
-			console.log("your token is: " + token);
-			console.log("your entered tracking number is: " + trackNo);
-			var soapRequest =
-				'<?xml version="1.0" encoding="utf-8"?>\
-			<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">\
-			<soap12:Body>\
-				<GetTrackingDataset xmlns="http://citjnb.co.za/citwebservices/">\
-				<strUsername>Avion</strUsername>\
-				<strToken>' + token + '</strToken>\
-				<strAccountNo>14771</strAccountNo>\
-				<strWaybillNo>' + trackNo + '</strWaybillNo>\
-				</GetTrackingDataset>\
-			</soap12:Body>\
-			</soap12:Envelope>';
-			var url = "http://www.citwebservices.co.za/citwebservices.asmx?WSDL/GetTrackingDataset";
-			$.ajax({
-				type: "POST",
-				url: url,
-				data: soapRequest,
-				dataType: "xml",
-				contentType: "text/xml; charset=\"utf-8\"",
-				success: function (data, status, req) {
-					console.log("your tracking is:");
-					var obj = $(data).find("GetTrackingDatasetResult");
-					$('#results').html("").append(obj[0]);
-					console.log(obj[0]);
-				},
-				error: processError,
-			});
-		}
+
+		// function GetTrackingXML(token) {
+		// 	var token = getToken();
+		// 	var trackNo = $('#trackNo').val();
+		// 	console.log("your token is: " + token);
+		// 	console.log("your entered tracking number is: " + trackNo);
+		// 	var soapRequest =
+		// 		'<?xml version="1.0" encoding="utf-8"?>\
+		// 	<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">\
+		// 	<soap12:Body>\
+		// 		<GetTrackingDataset xmlns="http://citjnb.co.za/citwebservices/">\
+		// 		<strUsername>Avion</strUsername>\
+		// 		<strToken>' +
+		// 		token + '</strToken>\
+		// 		<strAccountNo>14771</strAccountNo>\
+		// 		<strWaybillNo>' + trackNo +
+		// 		'</strWaybillNo>\
+		// 		</GetTrackingDataset>\
+		// 	</soap12:Body>\
+		// 	</soap12:Envelope>';
+		// 	var url = "http://www.citwebservices.co.za/citwebservices.asmx?WSDL/GetTrackingDataset";
+		// 	$.ajax({
+		// 		type: "POST",
+		// 		url: url,
+		// 		data: soapRequest,
+		// 		dataType: "xml",
+		// 		contentType: "text/xml; charset=\"utf-8\"",
+		// 		success: function (data, status, req) {
+		// 			console.log("your tracking is:");
+		// 			var obj = $(data).find("GetTrackingDatasetResult");
+		// 			$('#results').html("").append(obj[0]);
+		// 			console.log(obj[0]);
+		// 		},
+		// 		error: processError,
+		// 	});
+		// }
+
 		function processError(data, status, req) {
 			console.log(req.responseText);
 			console.log(data.responseText);
@@ -681,4 +712,5 @@
 	<![endif]-->
 	<div id="topcontrol" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;" title="Scroll Back to Top"></div>
 </body>
+
 </html>
